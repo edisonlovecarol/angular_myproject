@@ -6,6 +6,7 @@ using Abp.Modules;
 using Abp.Web.Mvc;
 using Abp.Zero.Configuration;
 using Wu.MyProject.Api;
+using Wu.MyProject.Web.App.Startup;
 
 namespace Wu.MyProject.Web
 {
@@ -30,8 +31,14 @@ namespace Wu.MyProject.Web
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
 
             AreaRegistration.RegisterAllAreas();
+            //路由
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            //
+            //BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //Bundling
+            AppBundleConfig.RegisterBundles(BundleTable.Bundles);
+
         }
     }
 }

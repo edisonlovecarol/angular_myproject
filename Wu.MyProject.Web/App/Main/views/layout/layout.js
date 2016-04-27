@@ -1,8 +1,10 @@
-﻿(function () {
-    var controllerId = 'app.views.layout';
-    angular.module('app').controller(controllerId, [
-        '$scope', function ($scope) {
-            var vm = this;
-            //Layout logic...
-        }]);
-})();
+﻿//(function () {
+//    appModule.controller('common.views.layout', [
+//        '$scope',
+//        function ($scope) {
+//            $scope.$on('$viewContentLoaded', function () {
+//                App.initComponents(); // init core components
+//            });
+//        }
+//    ]);
+//})();

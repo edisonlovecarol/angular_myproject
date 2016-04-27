@@ -87,6 +87,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Localization\CultureHelper.cs" />
     <Compile Include="MyProjectConsts.cs" />
     <Compile Include="MyProjectCoreModule.cs" />
     <Compile Include="Authorization\MyProjectAuthorizationProvider.cs" />

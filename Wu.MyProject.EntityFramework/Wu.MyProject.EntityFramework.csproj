@@ -141,6 +141,10 @@
     <Compile Include="Migrations\201601032115057_Upgraded_Module_Zero_0_7_7.Designer.cs">
       <DependentUpon>201601032115057_Upgraded_Module_Zero_0_7_7.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604260625540_adddd.cs" />
+    <Compile Include="Migrations\201604260625540_adddd.Designer.cs">
+      <DependentUpon>201604260625540_adddd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyProjectDataModule.cs" />
     <Compile Include="Migrations\SeedData\DefaultEditionsBuilder.cs" />
@@ -183,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601032115057_Upgraded_Module_Zero_0_7_7.resx">
       <DependentUpon>201601032115057_Upgraded_Module_Zero_0_7_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604260625540_adddd.resx">
+      <DependentUpon>201604260625540_adddd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
