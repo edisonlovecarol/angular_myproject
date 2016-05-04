@@ -1,5 +1,5 @@
 ﻿(function () {
-    angular.module('app').directive('enterKey', [
+    appModule.directive('enterKey', [
         function () {
             return function (scope, element, attrs) {
                 element.bind("keydown keypress", function (event) {

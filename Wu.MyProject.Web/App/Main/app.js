@@ -1,26 +1,16 @@
-﻿var appModule = angular.module("app", [
+﻿var appModule = angular.module("appModule", [
     
-    'ui.router',
-    'ui.bootstrap',
-    'ui.utils',
-    "ui.jq",
-    "ngSanitize",
-    'angularFileUpload',
-    'daterangepicker',
-    'abp',
-   
-   
-    'kendo.directives'
+ "ui.router", "ui.bootstrap", "oc.lazyLoad", "ngSanitize","abp"
     
 
 ]);
 /* Configure ocLazyLoader(refer: https://github.com/ocombe/ocLazyLoad) */
 appModule.config(['$ocLazyLoadProvider', function ($ocLazyLoadProvider) {
     $ocLazyLoadProvider.config({
-        cssFilesInsertBefore: 'ng_load_plugins_before', // load the css files before a LINK element with this ID.
-        debug: false,
-        events: true,
-        modules: []
+        //cssFilesInsertBefore: 'ng_load_plugins_before', // load the css files before a LINK element with this ID.
+        //debug: false,
+        //events: true,
+        //modules: []
     });
 }]);
 
@@ -43,43 +33,65 @@ appModule.factory("settings", ["$rootScope", function ($rootScope) {
         globalPath: "/Scripts/assets/global",
         layoutPath: "/Scripts/assets/layouts/layout"
     };
-    $rootScope.settings = settings;
+   
     return settings;
 }]);
 
-appModule.config([
-    '$stateProvider', '$urlRouterProvider',
-    function ($stateProvider, $urlRouterProvider) {
+//appModule.config([
+//    '$stateProvider', '$urlRouterProvider',
+//    function ($stateProvider, $urlRouterProvider) {
 
-        // Default route (overrided below if user has permission)
-        $urlRouterProvider.otherwise("/welcome");
+//        // Default route (overrided below if user has permission)
+//        $urlRouterProvider.otherwise("/dashboard");
 
-        //Welcome page
-        $stateProvider.state('welcome', {
-            url: '/welcome',
-            templateUrl: '~/App/common/views/welcome/index.cshtml'
-        });
+//        //Welcome page
+//        $stateProvider.state('dashboard', {
+//            url: '/dashboard',
+//            templateUrl: '~/App/Main/views/dashboard/dashboard.cshtml',
+//            data: { pageTitle: "信息汇总" },
+//            controller: "app.admin.dashboard",
+//            resolve: {
+//                deps: [
+//                    "$ocLazyLoad",
+//                    function ($ocLazyLoad) {
+//                        return $ocLazyLoad.load({
+//                            serie: true,
+//                            insertBefore: "#ng_load_plugins_before",
+//                            files: [
+//                                abp.appPath + "Scripts/assets/global/plugins/morris/morris.css",
+//                                abp.appPath + "Scripts/assets/global/plugins/morris/morris.min.js",
+//                                abp.appPath + "Scripts/assets/global/plugins/morris/raphael-min.js",
+//                                abp.appPath + "Scripts/assets/global/plugins/jquery.sparkline.min.js",
+//                                abp.appPath + "Scripts/assets/pages/scripts/dashboard.min.js",
+//                                '/App/Main/views/dashboard/dashboard.js?v=' + abp.vtime
+//                            ]
+//                        });
+//                    }
+//                ]
+//            }
+//        });
 
-        //COMMON routes
 
-        if (abp.auth.hasPermission('Pages.Administration.Roles')) {
-            $stateProvider.state('roles', {
-                url: '/roles',
-                templateUrl: '~/App/common/views/roles/index.cshtml',
-                menu: 'Administration.Roles'
-            });
-        }
+//        //COMMON routes
 
-        if (abp.auth.hasPermission('Pages.Administration.Users')) {
-            $stateProvider.state('users', {
-                url: '/users',
-                templateUrl: '~/App/common/views/users/index.cshtml',
-                menu: 'Administration.Users'
-            });
-        }
+//        //if (abp.auth.hasPermission('Pages.Administration.Roles')) {
+//        //    $stateProvider.state('roles', {
+//        //        url: '/roles',
+//        //        templateUrl: '~/App/common/views/roles/index.cshtml',
+//        //        menu: 'Administration.Roles'
+//        //    });
+//        //}
 
-    }
-]);
+//        //if (abp.auth.hasPermission('Pages.Administration.Users')) {
+//        //    $stateProvider.state('users', {
+//        //        url: '/users',
+//        //        templateUrl: '~/App/common/views/users/index.cshtml',
+//        //        menu: 'Administration.Users'
+//        //    });
+//        //}
+
+//    }
+//]);
 
 
 /* Init global settings and run the app */

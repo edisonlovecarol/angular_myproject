@@ -1,5 +1,5 @@
 ﻿(function () {
-    angular.module('app').directive('autoFocus', function () {
+    appModule.directive('autoFocus', function () {
           return {
               restrict: 'A',
               link: function ($scope, element) {

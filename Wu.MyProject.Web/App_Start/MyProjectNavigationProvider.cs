@@ -33,8 +33,8 @@ namespace Wu.MyProject.Web
                 ).AddItem(
                     new MenuItemDefinition(
                         "About",
-                        new LocalizableString("About", MyProjectConsts.LocalizationSourceName),
-                        url: "#/about",
+                        L("About"),
+                        url: "About",
                         icon: "fa fa-info"
                         )
                 );

@@ -1,6 +1,6 @@
 ﻿(function () {
     var controllerId = 'app.views.layout.header';
-    angular.module('app').controller(controllerId, [
+    appModule.controller(controllerId, [
         '$rootScope', '$state', 'appSession',
         function ($rootScope, $state, appSession) {
             var vm = this;
@@ -17,12 +17,14 @@
 
             vm.getShownUserName = function () {
                 if (!abp.multiTenancy.isEnabled) {
-                    return appSession.user.userName;
+                     return appSession.user.userName;
+                  
                 } else {
                     if (appSession.tenant) {
                         return appSession.tenant.tenancyName + '\\' + appSession.user.userName;
                     } else {
-                        return '.\\' + appSession.user.userName;
+                         return '.\\' + appSession.user.userName;
+                       
                     }
                 }
             };
