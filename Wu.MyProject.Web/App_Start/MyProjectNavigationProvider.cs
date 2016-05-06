@@ -19,7 +19,7 @@ namespace Wu.MyProject.Web
                     new MenuItemDefinition(
                         "Home",
                         new LocalizableString("HomePage", MyProjectConsts.LocalizationSourceName),
-                        url: "#/",
+                        url: "HomePage",
                         icon: "fa fa-home"
                         )
                 ).AddItem(
@@ -29,8 +29,26 @@ namespace Wu.MyProject.Web
                         url: "#tenants",
                         icon: "fa fa-globe",
                         requiredPermissionName: PermissionNames.Pages_Tenants
+                       
                         )
-                ).AddItem(
+                )
+                //这里插入数据
+                .AddItem(
+                    new MenuItemDefinition(
+                        "Administration",
+                         L("Administration"),
+                         icon: "icon-wrench"
+                        )
+                        .AddItem(new MenuItemDefinition(
+                        "Administration.Users",
+                        L("Users"),
+                        url: "users",
+                        icon: "icon-users"
+                //requiredPermissionName: AppPermissions.Pages_Administration_Users
+                            )
+                )
+                )
+                .AddItem(
                     new MenuItemDefinition(
                         "About",
                         L("About"),
@@ -38,6 +56,8 @@ namespace Wu.MyProject.Web
                         icon: "fa fa-info"
                         )
                 );
+                
+             
         }
 
         private static ILocalizableString L(string name)

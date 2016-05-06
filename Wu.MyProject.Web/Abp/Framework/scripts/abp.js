@@ -7,7 +7,7 @@
     abp.appPath = abp.appPath || '/';
 
     abp.pageLoadTime = new Date();
-    abp.vtime = new Date().getTime();
+
     //Converts given path to absolute path using abp.appPath variable.
     abp.toAbsAppPath = function (path) {
         if (path.indexOf('/') == 0) {

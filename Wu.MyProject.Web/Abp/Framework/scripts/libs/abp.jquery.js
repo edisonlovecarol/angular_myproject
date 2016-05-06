@@ -94,7 +94,7 @@
                     if (data.unAuthorizedRequest) {
                         abp.ajax.handleUnAuthorizedRequest(messagePromise, data.targetUrl);
                     }
-                } else { //not wrapped result
+                } else { //not abp-related data!
                     $dfd && $dfd.resolve(data);
                     userOptions.success && userOptions.success(data);
                 }

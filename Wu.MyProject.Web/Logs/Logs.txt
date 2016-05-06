@@ -30993,3 +30993,1361 @@ WARN  2016-05-04 17:48:44,144 [62   ] Abp.Logging.LogHelper                    -
 WARN  2016-05-04 17:48:44,145 [62   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
 WARN  2016-05-04 17:48:44,145 [62   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
 WARN  2016-05-04 17:48:44,145 [62   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-05 10:14:52,222 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-05 10:15:20,383 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-05 10:15:20,387 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,389 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,389 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,389 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,389 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,405 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,424 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,424 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,424 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,444 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,444 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,444 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:15:20,449 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-05 10:15:20,472 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:15:20,472 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:15:20,472 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:15:20,472 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:15:24,236 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-05 10:15:24,255 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-05 10:15:24,256 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-05 10:15:24,256 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-05 10:15:24,257 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-05 10:15:25,581 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-05 10:15:25,581 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-05 10:15:25,993 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-05 10:15:25,994 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-05 10:15:25,998 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-05 10:15:26,118 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-05 10:15:26,119 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-05 10:15:26,119 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-05 10:15:26,120 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-05 10:15:47,134 [10   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 10:15:47,135 [10   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 10:15:47,135 [10   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 10:15:47,135 [10   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 10:15:47,135 [10   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 10:53:56,684 [107  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 10:53:56,684 [107  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 10:53:56,684 [107  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 10:53:56,685 [107  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 10:53:56,685 [107  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-05 10:56:04,571 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-05 10:56:06,734 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-05 10:56:06,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,742 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,742 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,742 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,743 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,743 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,743 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,743 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,743 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,744 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,744 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,744 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,744 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:56:06,751 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-05 10:56:06,777 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:56:06,778 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:56:06,778 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:56:06,778 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:56:14,163 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-05 10:56:14,167 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-05 10:56:14,167 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-05 10:56:14,168 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-05 10:56:14,169 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-05 10:56:15,385 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-05 10:56:15,385 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-05 10:56:15,554 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-05 10:56:15,556 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-05 10:56:15,564 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-05 10:56:15,615 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-05 10:56:15,616 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-05 10:56:15,617 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-05 10:56:15,617 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-05 10:56:23,424 [8    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 10:56:23,424 [8    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 10:56:23,424 [8    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 10:56:23,425 [8    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 10:56:23,426 [8    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-05 10:59:42,145 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-05 10:59:44,033 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-05 10:59:44,036 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,037 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,038 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,039 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,039 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,039 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,039 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,039 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,040 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 10:59:44,043 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-05 10:59:44,063 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:59:44,063 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:59:44,063 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:59:44,063 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 10:59:46,583 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-05 10:59:46,588 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-05 10:59:46,589 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-05 10:59:46,589 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-05 10:59:46,590 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-05 10:59:47,834 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-05 10:59:47,834 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-05 10:59:47,956 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-05 10:59:47,957 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-05 10:59:47,962 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-05 10:59:47,988 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-05 10:59:47,989 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-05 10:59:47,989 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-05 10:59:47,990 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+ERROR 2016-05-05 10:59:54,666 [6    ] Web.Mvc.Controllers.AbpScriptsController - Abp.AbpException: There is no permission with name: PPPP
+   在 Abp.Authorization.PermissionManager.GetPermission(String name)
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__3.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__b.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenusAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Navigation.NavigationScriptManager.<GetScriptAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+Abp.AbpException: There is no permission with name: PPPP
+   在 Abp.Authorization.PermissionManager.GetPermission(String name)
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__3.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__b.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenusAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Navigation.NavigationScriptManager.<GetScriptAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-05-05 10:59:55,937 [6    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 10:59:55,937 [6    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 10:59:55,938 [6    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 10:59:55,938 [6    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 10:59:55,938 [6    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+ERROR 2016-05-05 11:08:47,807 [12   ] Web.Mvc.Controllers.AbpScriptsController - Abp.AbpException: There is no permission with name: PPPP
+   在 Abp.Authorization.PermissionManager.GetPermission(String name)
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__3.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__b.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenusAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Navigation.NavigationScriptManager.<GetScriptAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+Abp.AbpException: There is no permission with name: PPPP
+   在 Abp.Authorization.PermissionManager.GetPermission(String name)
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__3.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__b.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenusAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Navigation.NavigationScriptManager.<GetScriptAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-05-05 11:08:47,918 [14   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:08:47,918 [14   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:08:47,918 [14   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 11:08:47,919 [14   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 11:08:47,919 [14   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+ERROR 2016-05-05 11:09:16,507 [18   ] Web.Mvc.Controllers.AbpScriptsController - Abp.AbpException: There is no permission with name: PPPP
+   在 Abp.Authorization.PermissionManager.GetPermission(String name)
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__3.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__b.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenusAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Navigation.NavigationScriptManager.<GetScriptAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+Abp.AbpException: There is no permission with name: PPPP
+   在 Abp.Authorization.PermissionManager.GetPermission(String name)
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__3.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__b.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenusAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Navigation.NavigationScriptManager.<GetScriptAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-05-05 11:09:16,604 [33   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:09:16,605 [33   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:09:16,605 [33   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 11:09:16,605 [33   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 11:09:16,606 [33   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+ERROR 2016-05-05 11:09:31,563 [33   ] Web.Mvc.Controllers.AbpScriptsController - Abp.AbpException: There is no permission with name: PPPP
+   在 Abp.Authorization.PermissionManager.GetPermission(String name)
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__3.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__b.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenusAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Navigation.NavigationScriptManager.<GetScriptAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+Abp.AbpException: There is no permission with name: PPPP
+   在 Abp.Authorization.PermissionManager.GetPermission(String name)
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__3.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__b.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenusAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Navigation.NavigationScriptManager.<GetScriptAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-05-05 11:09:31,690 [14   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:09:31,690 [14   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:09:31,690 [14   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 11:09:31,691 [14   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 11:09:31,691 [14   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-05 11:26:38,281 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-05 11:26:39,998 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-05 11:26:40,006 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,008 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,009 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,010 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:26:40,013 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-05 11:26:40,033 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 11:26:40,033 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 11:26:40,033 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 11:26:40,033 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 11:26:42,798 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-05 11:26:42,803 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-05 11:26:42,804 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-05 11:26:42,804 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-05 11:26:42,805 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-05 11:26:44,202 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-05 11:26:44,202 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-05 11:26:44,323 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-05 11:26:44,324 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-05 11:26:44,330 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-05 11:26:44,359 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-05 11:26:44,361 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-05 11:26:44,363 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-05 11:26:44,364 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-05 11:26:50,164 [8    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 11:26:50,165 [8    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 11:26:51,342 [6    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:26:51,342 [6    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:26:51,343 [6    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 11:26:51,343 [6    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 11:26:51,343 [6    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-05 11:39:39,830 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-05 11:39:44,502 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-05 11:39:44,507 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 11:39:44,515 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-05 11:39:44,549 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 11:39:44,549 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 11:39:44,549 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 11:39:44,549 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 11:39:46,827 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-05 11:39:46,833 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-05 11:39:46,833 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-05 11:39:46,834 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-05 11:39:46,835 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-05 11:39:48,053 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-05 11:39:48,053 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-05 11:39:48,198 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-05 11:39:48,200 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-05 11:39:48,205 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-05 11:39:48,233 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-05 11:39:48,234 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-05 11:39:48,235 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-05 11:39:48,235 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-05 11:39:53,575 [7    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 11:39:53,575 [7    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 11:39:53,734 [8    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:39:53,734 [8    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:39:53,735 [8    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 11:39:53,735 [8    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 11:39:53,735 [8    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 11:41:39,569 [12   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 11:41:39,569 [12   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 11:41:39,700 [12   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:41:39,701 [12   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:41:39,701 [12   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 11:41:39,701 [12   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 11:41:39,701 [12   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 11:42:08,032 [7    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 11:42:08,033 [7    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 11:49:25,361 [44   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:49:25,362 [44   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 11:49:25,362 [44   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 11:49:25,362 [44   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 11:49:25,363 [44   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 13:23:50,715 [262  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 13:23:50,732 [262  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 13:23:50,987 [272  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:23:50,989 [272  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:23:50,993 [272  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 13:23:50,993 [272  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 13:23:50,993 [272  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:14,540 [266  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:14,541 [266  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:14,737 [297  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:14,737 [297  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:14,738 [297  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:14,738 [297  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:14,738 [297  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:40,641 [295  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:40,642 [295  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:41,323 [295  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:41,323 [295  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:41,323 [295  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:41,324 [295  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 13:30:41,324 [295  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 13:34:33,453 [281  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 13:34:33,454 [281  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 13:34:34,647 [291  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:34:34,715 [291  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:34:34,715 [291  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 13:34:34,715 [291  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 13:34:34,716 [291  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 13:42:46,213 [283  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 13:42:46,214 [283  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 13:42:46,373 [293  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:42:46,375 [293  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:42:46,375 [293  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 13:42:46,376 [293  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 13:42:46,376 [293  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:13,502 [271  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:13,503 [271  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:13,623 [291  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:13,624 [291  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:13,624 [291  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:13,624 [291  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:13,625 [291  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:41,530 [295  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:41,530 [295  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:42,715 [297  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:42,715 [297  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:42,715 [297  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:42,716 [297  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:42,716 [297  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:46,374 [272  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:46,375 [272  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:46,524 [285  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:46,525 [285  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:46,525 [285  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:46,525 [285  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:46,525 [285  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:57,758 [290  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:57,758 [290  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:57,815 [297  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:57,815 [297  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:57,815 [297  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:57,816 [297  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 13:44:57,816 [297  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-05 14:16:12,339 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-05 14:16:15,620 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-05 14:16:15,623 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,628 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,628 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,628 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,672 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,672 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-05 14:16:15,675 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-05 14:16:15,695 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 14:16:15,695 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 14:16:15,695 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 14:16:15,695 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-05 14:16:20,921 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-05 14:16:20,927 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-05 14:16:20,927 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-05 14:16:20,929 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-05 14:16:20,932 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-05 14:16:22,241 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-05 14:16:22,241 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-05 14:16:22,433 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-05 14:16:22,434 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-05 14:16:22,439 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-05 14:16:22,478 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-05 14:16:22,479 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-05 14:16:22,480 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-05 14:16:22,481 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-05 14:18:34,129 [17   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 14:18:34,138 [17   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 14:18:34,765 [23   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 14:18:34,765 [23   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 14:18:34,765 [23   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 14:18:34,766 [23   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 14:18:34,766 [23   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 14:25:40,434 [46   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 14:25:40,435 [46   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 14:25:41,115 [41   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 14:25:41,116 [41   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 14:25:41,117 [41   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 14:25:41,117 [41   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 14:25:41,117 [41   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 14:38:55,276 [140  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 14:38:55,277 [140  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 14:38:55,927 [141  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 14:38:55,927 [141  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 14:38:55,927 [141  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 14:38:55,927 [141  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 14:38:55,928 [141  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 14:42:05,074 [160  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 14:42:05,075 [160  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 14:42:05,809 [160  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 14:42:05,809 [160  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 14:42:05,810 [160  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 14:42:05,810 [160  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 14:42:05,810 [160  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 15:17:25,593 [338  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 15:17:25,593 [338  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 15:17:25,728 [339  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 15:17:25,729 [339  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 15:17:25,765 [339  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 15:17:25,765 [339  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 15:17:25,765 [339  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-05 15:24:27,204 [394  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-05 15:24:27,204 [394  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-05 15:24:27,436 [383  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-05 15:24:27,437 [383  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-05 15:24:27,438 [383  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-05 15:24:27,438 [383  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-05 15:24:27,439 [383  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 11:49:56,630 [2785 ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 11:49:56,652 [2785 ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 11:49:56,969 [2779 ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 11:49:56,970 [2779 ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 11:49:56,970 [2779 ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 11:49:56,970 [2779 ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 11:49:56,970 [2779 ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-06 13:34:02,429 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-06 13:34:13,612 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-06 13:34:13,616 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,617 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,617 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,618 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,618 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,618 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,656 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 13:34:13,660 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-06 13:34:13,678 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 13:34:13,678 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 13:34:13,678 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 13:34:13,678 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 13:34:16,357 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-06 13:34:16,377 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-06 13:34:16,377 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-06 13:34:16,378 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-06 13:34:16,379 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-06 13:34:17,685 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-06 13:34:17,685 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-06 13:34:17,905 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-06 13:34:17,906 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-06 13:34:17,913 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-06 13:34:17,952 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-06 13:34:17,954 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-06 13:34:17,954 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-06 13:34:17,955 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-06 13:34:25,781 [6    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:25,782 [6    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:26,170 [6    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:26,170 [6    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:26,171 [6    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:26,171 [6    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:26,171 [6    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:48,363 [7    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:48,363 [7    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:50,499 [8    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:50,499 [8    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:50,500 [8    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:50,500 [8    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 13:34:50,500 [8    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 13:36:26,394 [23   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 13:36:26,394 [23   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 13:36:26,587 [31   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 13:36:26,588 [31   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 13:36:26,588 [31   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 13:36:26,588 [31   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 13:36:26,588 [31   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 13:40:23,600 [24   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 13:40:23,600 [24   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 13:40:24,887 [12   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 13:40:24,887 [12   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 13:40:24,888 [12   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 13:40:24,888 [12   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 13:40:24,888 [12   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 13:44:19,266 [34   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 13:44:19,266 [34   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 13:44:21,965 [34   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 13:44:21,966 [34   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 13:44:21,966 [34   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 13:44:21,966 [34   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 13:44:21,967 [34   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-06 14:46:03,985 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-06 14:46:12,770 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-06 14:46:12,773 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,775 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,776 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,776 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,776 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,776 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,789 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,789 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,789 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,789 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,812 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,812 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,812 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 14:46:12,816 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-06 14:46:12,835 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 14:46:12,835 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 14:46:12,835 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 14:46:12,835 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 14:46:15,619 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-06 14:46:15,633 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-06 14:46:15,634 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-06 14:46:15,634 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-06 14:46:15,635 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-06 14:46:16,946 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-06 14:46:16,946 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-06 14:46:17,261 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-06 14:46:17,262 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-06 14:46:17,267 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-06 14:46:17,362 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-06 14:46:17,363 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-06 14:46:17,364 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-06 14:46:17,364 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-06 14:46:26,320 [7    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 14:46:26,320 [7    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 14:46:26,534 [8    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 14:46:26,534 [8    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 14:46:26,534 [8    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 14:46:26,534 [8    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 14:46:26,535 [8    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-06 15:22:37,752 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-06 15:22:39,415 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-06 15:22:39,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,419 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,419 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,421 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,421 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,421 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,421 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:22:39,425 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-06 15:22:39,444 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:22:39,445 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:22:39,445 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:22:39,445 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:22:44,948 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-06 15:22:44,953 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-06 15:22:44,954 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-06 15:22:44,954 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-06 15:22:44,955 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-06 15:22:46,357 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-06 15:22:46,357 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-06 15:22:46,535 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-06 15:22:46,537 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-06 15:22:46,542 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-06 15:22:46,570 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-06 15:22:46,571 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-06 15:22:46,572 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-06 15:22:46,573 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-06 15:22:54,150 [9    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 15:22:54,151 [9    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 15:22:54,314 [7    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 15:22:54,314 [7    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 15:22:54,314 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 15:22:54,315 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 15:22:54,315 [7    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-06 15:32:35,791 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-06 15:32:37,571 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-06 15:32:37,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:32:37,582 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-06 15:32:37,603 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:32:37,603 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:32:37,603 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:32:37,603 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:32:40,254 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-06 15:32:40,259 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-06 15:32:40,259 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-06 15:32:40,260 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-06 15:32:40,261 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-06 15:32:41,631 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-06 15:32:41,631 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-06 15:32:41,760 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-06 15:32:41,761 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-06 15:32:41,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-06 15:32:41,794 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-06 15:32:41,794 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-06 15:32:41,795 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-06 15:32:41,796 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-05-06 15:36:21,120 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-06 15:36:22,962 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-06 15:36:22,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,967 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 15:36:22,973 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-06 15:36:22,992 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:36:22,992 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:36:22,992 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:36:22,992 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 15:36:25,506 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-06 15:36:25,511 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-06 15:36:25,512 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-06 15:36:25,512 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-06 15:36:25,513 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-06 15:36:27,034 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-06 15:36:27,035 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-06 15:36:27,158 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-06 15:36:27,159 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-06 15:36:27,165 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-06 15:36:27,190 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-06 15:36:27,191 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-06 15:36:27,191 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-06 15:36:27,192 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-06 15:36:33,118 [11   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 15:36:33,119 [11   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 15:36:33,119 [11   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 15:36:33,119 [11   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 15:36:33,120 [11   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 15:38:36,957 [7    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 15:38:36,958 [7    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 15:38:36,958 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 15:38:36,958 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 15:38:36,959 [7    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-06 16:05:47,152 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-06 16:05:49,201 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-06 16:05:49,204 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,205 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,236 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,236 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,236 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,236 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,236 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,236 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,236 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,236 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,236 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,236 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,237 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:05:49,240 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-06 16:05:49,260 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:05:49,260 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:05:49,260 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:05:49,260 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:05:51,715 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-06 16:05:51,720 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-06 16:05:51,720 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-06 16:05:51,721 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-06 16:05:51,721 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-06 16:05:52,911 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-06 16:05:52,911 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-06 16:05:53,036 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-06 16:05:53,037 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-06 16:05:53,042 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-06 16:05:53,071 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-06 16:05:53,071 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-06 16:05:53,072 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-06 16:05:53,073 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-06 16:08:02,860 [18   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:08:02,869 [18   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:08:02,869 [18   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 16:08:02,870 [18   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 16:08:02,870 [18   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 16:09:33,105 [29   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:09:33,105 [29   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:09:33,105 [29   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 16:09:33,106 [29   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 16:09:33,106 [29   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 16:10:33,014 [23   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:10:33,014 [23   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:10:33,014 [23   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 16:10:33,015 [23   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 16:10:33,015 [23   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 16:11:36,333 [37   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:11:36,333 [37   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:11:36,333 [37   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 16:11:36,334 [37   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 16:11:36,334 [37   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-06 16:13:19,344 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-06 16:13:21,068 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-06 16:13:21,071 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,072 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,074 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,074 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:13:21,078 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-06 16:13:21,100 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:13:21,100 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:13:21,100 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:13:21,100 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:13:23,469 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-06 16:13:23,474 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-06 16:13:23,475 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-06 16:13:23,476 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-06 16:13:23,476 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-06 16:13:24,714 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-06 16:13:24,714 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-06 16:13:24,835 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-06 16:13:24,836 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-06 16:13:24,841 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-06 16:13:24,869 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-06 16:13:24,870 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-06 16:13:24,870 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-06 16:13:24,871 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-06 16:13:30,546 [11   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 16:13:30,547 [11   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 16:13:32,279 [7    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:13:32,279 [7    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:13:32,279 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 16:13:32,279 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 16:13:32,280 [7    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-06 16:21:55,920 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-06 16:22:04,363 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-06 16:22:04,366 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,369 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,369 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,369 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,369 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,369 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,369 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,369 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 16:22:04,373 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-06 16:22:04,393 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:22:04,393 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:22:04,393 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:22:04,393 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 16:22:06,611 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-06 16:22:06,616 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-06 16:22:06,616 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-06 16:22:06,617 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-06 16:22:06,618 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-06 16:22:07,964 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-06 16:22:07,964 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-06 16:22:08,096 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-06 16:22:08,097 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-06 16:22:08,101 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-06 16:22:08,129 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-06 16:22:08,130 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-06 16:22:08,131 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-06 16:22:08,132 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-06 16:22:13,705 [11   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 16:22:13,706 [11   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 16:22:13,869 [9    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:22:13,870 [9    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:22:13,870 [9    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 16:22:13,870 [9    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 16:22:13,870 [9    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 16:57:14,251 [178  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 16:57:14,251 [178  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 16:57:14,343 [193  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:57:14,343 [193  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:57:14,343 [193  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 16:57:14,343 [193  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 16:57:14,344 [193  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 16:58:08,867 [192  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 16:58:08,867 [192  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 16:58:09,105 [193  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:58:09,106 [193  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 16:58:09,106 [193  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 16:58:09,106 [193  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 16:58:09,107 [193  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:00,244 [176  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:00,244 [176  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:01,000 [174  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:01,000 [174  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:01,001 [174  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:01,001 [174  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:01,001 [174  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:07,313 [161  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:07,314 [161  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:07,494 [168  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:07,494 [168  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:07,495 [168  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:07,496 [168  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:07,497 [168  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:34,358 [174  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:34,359 [174  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:34,960 [166  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:34,960 [166  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:34,960 [166  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:34,961 [166  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:04:34,961 [166  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-06 17:22:23,088 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-06 17:22:46,206 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-06 17:22:46,210 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,211 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,211 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,211 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,226 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,226 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,226 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,227 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,248 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,249 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,249 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:22:46,252 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-06 17:22:46,272 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 17:22:46,272 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 17:22:46,272 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 17:22:46,272 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 17:22:48,713 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-06 17:22:48,730 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-06 17:22:48,731 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-06 17:22:48,732 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-06 17:22:48,732 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-06 17:22:49,898 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-06 17:22:49,898 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-06 17:22:50,201 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-06 17:22:50,202 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-06 17:22:50,206 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-06 17:22:50,275 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-06 17:22:50,276 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-06 17:22:50,277 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-06 17:22:50,278 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-06 17:23:03,061 [10   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:23:03,061 [10   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:23:03,480 [7    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:23:03,480 [7    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:23:03,481 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:23:03,481 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:23:03,481 [7    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:25:29,439 [25   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:25:29,439 [25   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:25:29,618 [22   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:25:29,618 [22   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:25:29,618 [22   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:25:29,619 [22   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:25:29,619 [22   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-06 17:32:28,703 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-06 17:32:30,415 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-06 17:32:30,419 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,421 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,422 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,422 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,422 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,422 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,423 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,423 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,423 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,423 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,423 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,423 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,423 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-06 17:32:30,431 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-06 17:32:30,486 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 17:32:30,486 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 17:32:30,486 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 17:32:30,486 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-06 17:32:34,561 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-06 17:32:34,566 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-06 17:32:34,568 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-06 17:32:34,570 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-06 17:32:34,571 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-06 17:32:35,749 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 4 classes defines auto mapping attributes
+DEBUG 2016-05-06 17:32:35,749 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-06 17:32:35,875 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-06 17:32:35,876 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-06 17:32:35,881 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-06 17:32:35,907 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-06 17:32:35,908 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-06 17:32:35,909 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-06 17:32:35,909 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-06 17:32:41,531 [9    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:32:41,532 [9    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:32:41,703 [7    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:32:41,703 [7    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:32:41,703 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:32:41,703 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:32:41,704 [7    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:32:55,869 [7    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:32:55,869 [7    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:32:55,870 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:32:55,870 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:32:55,870 [7    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:30,220 [37   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:30,220 [37   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:31,420 [25   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:31,421 [25   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:31,421 [25   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:31,421 [25   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:31,421 [25   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:33,760 [38   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:33,761 [38   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:33,761 [38   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:33,761 [38   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:35:33,761 [38   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:36:41,504 [27   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:36:41,504 [27   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:36:42,661 [32   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:36:42,661 [32   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:36:42,661 [32   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:36:42,662 [32   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:36:42,662 [32   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:09,222 [18   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:09,223 [18   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:09,811 [12   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:09,813 [12   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:09,813 [12   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:09,813 [12   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:09,814 [12   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:52,721 [13   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:52,722 [13   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:52,837 [15   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:52,838 [15   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:52,838 [15   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:52,838 [15   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:37:52,838 [15   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:29,012 [72   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:29,012 [72   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:29,118 [63   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:29,118 [63   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:29,118 [63   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:29,119 [63   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:29,119 [63   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:33,486 [75   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:33,487 [75   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:33,566 [77   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:33,567 [77   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:33,567 [77   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:33,567 [77   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:33,567 [77   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:50,753 [78   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:50,753 [78   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:50,849 [77   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:50,849 [77   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:50,851 [77   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:50,851 [77   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:42:50,852 [77   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-06 17:44:08,934 [74   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-06 17:44:08,934 [74   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-06 17:44:09,032 [57   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:44:09,032 [57   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-06 17:44:09,033 [57   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-06 17:44:09,033 [57   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-06 17:44:09,033 [57   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!

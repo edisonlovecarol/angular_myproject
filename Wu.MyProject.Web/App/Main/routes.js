@@ -1,6 +1,6 @@
 ﻿appModule.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/dashboard");
-    $stateProvider.state('dashboard', {
+    $stateProvider.state('HomePage', {
         url: '/dashboard',
         templateUrl: '~/App/Main/views/dashboard/dashboard.cshtml',
         data: { pageTitle: "信息汇总" },
@@ -48,5 +48,28 @@
             ]
         }
     });
+
+    //$stateProvider.state('users', {
+    //    url: '/users',
+    //    templateUrl: '/App/Main/views/identity/users.html',
+    //    data: { pageTitle: "关于我们" },
+    //    controller: "app.admin.identity.users",
+    //    menu: 'Administration.Users',
+    //    resolve: {
+    //        deps: [
+    //            "$ocLazyLoad",
+    //            function ($ocLazyLoad) {
+    //                return $ocLazyLoad.load({
+
+    //                    insertBefore: "#ng_load_plugins_before",
+    //                    files: [
+
+    //                        '/App/Main/views/identity/users.js'
+    //                    ]
+    //                });
+    //            }
+    //        ]
+    //    }
+    //});
 
 }]);

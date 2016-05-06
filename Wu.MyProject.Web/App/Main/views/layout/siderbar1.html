@@ -1,0 +1,82 @@
+﻿<div class="page-sidebar navbar-collapse collapse">
+    <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" ng-class="{'page-sidebar-menu-closed': settings.layout.pageSidebarClosed}">
+        <li class="sidebar-search-wrapper hide">
+            <form class="sidebar-search sidebar-search-bordered" action="#" method="POST">
+                <a href="javascript:;" class="remove">
+                    <i class="icon-close"></i>
+                </a>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                        <a href="javascript:;" class="btn submit">
+                            <i class="icon-magnifier"></i>
+                        </a>
+                    </span>
+                </div>
+            </form>
+        </li>
+        <li class="start nav-item">
+            <a href="#/dashboard">
+                <i class="icon-home"></i>
+                <span class="title">信息汇总</span>
+            </a>
+        </li>
+        <li class="heading">
+            <h3> 权限模块 </h3>
+        </li>
+
+
+
+        <li class="nav-item">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-key"></i>
+                <span class="title"> 身份认证 </span>
+                <span class="arrow"></span>
+            </a>
+            <ul class="sub-menu">
+                <li><a href="#/users"><span><i class="icon-user"></i> 用户信息管理 </span></a></li>
+                <li><a href="#/roles"><span><i class="icon-badge"></i> 角色信息管理 </span></a></li>
+                <li><a href="#/userroles"><span><i class="icon-users"></i> 用户角色管理 </span></a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-shield"></i>
+                <span class="title"> 权限安全 </span>
+                <span class="arrow"></span>
+            </a>
+            <ul class="sub-menu">
+                <li><a href="#/functions"><span><i class="icon-social-dropbox"></i> 功能信息管理 </span></a></li>
+                <li><a href="#/functionroles"><span><i class="icon-graduation"></i> 角色功能权限 </span></a></li>
+                <li><a href="#/functionusers"><span><i class="icon-magnet"></i> 用户功能权限 </span></a></li>
+                <li><a href="#/entityinfos"><span><i class="icon-puzzle"></i> 实体数据管理 </span></a></li>
+                <li><a href="#/entityinforoles"><span><i class="icon-vector"></i> 角色数据权限 </span></a></li>
+                <li><a href="#/entityinfosuser"><span><i class="icon-moustache"></i> 用户数据权限 </span></a></li>
+            </ul>
+        </li>
+        <li class="heading">
+            <h3> 系统模块 </h3>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-settings"></i>
+                <span class="title"> 系统管理 </span>
+                <span class="arrow"></span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item"><a href="#/operatelogs"><span><i class="icon-layers"></i> 数据日志 </span></a></li>
+                <li><a href="#/systemlogs"><span><i class="icon-vector"></i> 系统日志 </span></a></li>
+            </ul>
+        </li>
+        <li ng-repeat="module in vm.menu.items" class="heading">
+            <h3> {{module.text}} </h3>
+        </li>
+        <!--<li ng-repeat="menu in module.items" class="nav-item">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="{{menu.icon}}"></i>
+                <span class="title"> {{menu.text}} </span>
+                <span class="arrow"></span>
+            </a>
+        </li>-->
+    </ul>
+</div>

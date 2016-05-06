@@ -262,6 +262,12 @@
     <Content Include="Abp\Framework\styles\utils\ie10fix.css" />
     <Content Include="App\common\views\welcome\index.html" />
     <Content Include="App\Main\app.js" />
+    <Content Include="App\Main\common\autoFocus.js" />
+    <Content Include="App\Main\common\busyIf.js" />
+    <Content Include="App\Main\common\buttonBusy.js" />
+    <Content Include="App\Main\common\enterKey.js" />
+    <Content Include="App\Main\common\metronic\directives.js" />
+    <Content Include="App\Main\common\permissionTree.js" />
     <Content Include="App\Main\images\abp-logo.png" />
     <Content Include="App\Main\main.css">
       <DependentUpon>main.less</DependentUpon>
@@ -278,13 +284,22 @@
     <Content Include="App\Main\views\home\home.js" />
     <Content Include="App\Main\views\identity\about.html" />
     <Content Include="App\Main\views\identity\about.js" />
+    <Content Include="App\Main\views\identity\users.html" />
+    <Content Include="App\Main\views\identity\users.js" />
     <Content Include="App\Main\views\layout\footer.js" />
     <Content Include="App\Main\views\layout\header.js" />
     <Content Include="App\Main\views\layout\layout.js" />
     <Content Include="App\Main\views\layout\sidebar.css" />
     <Content Include="App\Main\views\layout\sidebar.js" />
+    <Content Include="App\Main\views\layout\siderbar1.html" />
     <Content Include="App\Main\views\layout\theme-panel.html" />
+    <Content Include="Common\Scripts\consts.js" />
     <Content Include="Common\Scripts\helpers.js" />
+    <Content Include="Common\Scripts\jquery-custom.js" />
+    <Content Include="Common\Scripts\ModalManager.js" />
+    <Content Include="Common\Scripts\utils.js" />
+    <Content Include="Common\Styles\core.css" />
+    <Content Include="Common\Styles\core.min.css" />
     <Content Include="Content\admin\admin.css" />
     <Content Include="Content\bootstrap-cosmo.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -796,6 +811,8 @@
     <Content Include="libs\jquery\jquery-migrate.min.js" />
     <Content Include="App\Main\views\layout\sidebar.cshtml" />
     <Content Include="App\Main\views\layout\footer.cshtml" />
+    <Content Include="Common\Styles\core.css.map" />
+    <Content Include="Common\Styles\core.less" />
     <None Include="libs\jquery\jquery.linq-vsdoc.js" />
     <Content Include="libs\jquery\jquery.linq.js" />
     <Content Include="libs\jquery\jquery.linq.min.js" />
@@ -4671,6 +4688,7 @@
     <Content Include="Scripts\sweetalert\sweet-alert.min.js" />
     <Content Include="Scripts\toastr.js" />
     <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Scripts\underscore.min.js" />
     <Content Include="Views\Account\Login.css">
       <DependentUpon>Login.less</DependentUpon>
     </Content>
