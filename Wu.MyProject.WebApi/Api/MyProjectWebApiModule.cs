@@ -21,5 +21,7 @@ namespace Wu.MyProject.Api
 
             Configuration.Modules.AbpWebApi().HttpConfiguration.Filters.Add(new HostAuthenticationFilter("Bearer"));
         }
+
+       
     }
 }

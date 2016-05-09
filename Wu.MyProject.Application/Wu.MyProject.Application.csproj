@@ -95,6 +95,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authorization\Users\Dto\CreateOrUpdateUserInput.cs" />
+    <Compile Include="Authorization\Users\Dto\GetUserForEditOutput.cs" />
+    <Compile Include="Authorization\Users\Dto\GetUserPermissionsForEditOutput.cs" />
+    <Compile Include="Authorization\Users\Dto\UpdateUserPermissionsInput.cs" />
+    <Compile Include="Authorization\Users\Dto\UserEditDto.cs" />
+    <Compile Include="Authorization\Users\Dto\UserListDto.cs" />
+    <Compile Include="Authorization\Users\Dto\UserRoleDto.cs" />
+    <Compile Include="Authorization\Users\IUserAppService.cs" />
+    <Compile Include="Authorization\Users\UserAppService.cs" />
     <Compile Include="MyProjectApplicationModule.cs" />
     <Compile Include="MyProjectAppServiceBase.cs" />
     <Compile Include="MultiTenancy\Dto\CreateTenantInput.cs" />
@@ -105,15 +114,12 @@
     <Compile Include="Roles\IRoleAppService.cs" />
     <Compile Include="Roles\Dto\UpdateRolePermissionsInput.cs" />
     <Compile Include="Test.cs" />
-    <Compile Include="Users\IUserAppService.cs" />
     <Compile Include="Roles\RoleAppService.cs" />
     <Compile Include="Sessions\Dto\GetCurrentLoginInformationsOutput.cs" />
     <Compile Include="Sessions\Dto\TenantLoginInfoDto.cs" />
     <Compile Include="Sessions\Dto\UserLoginInfoDto.cs" />
     <Compile Include="Sessions\ISessionAppService.cs" />
     <Compile Include="Sessions\SessionAppService.cs" />
-    <Compile Include="Users\Dto\ProhibitPermissionInput.cs" />
-    <Compile Include="Users\UserAppService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -124,6 +130,13 @@
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>Wu.MyProject.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Wu.MyProject.Utility\Wu.MyProject.Utility.csproj">
+      <Project>{265EF4D0-5CDF-4D67-823F-5CD5A4F4F557}</Project>
+      <Name>Wu.MyProject.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extension\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

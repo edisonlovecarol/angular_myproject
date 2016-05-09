@@ -49,27 +49,27 @@
         }
     });
 
-    //$stateProvider.state('users', {
-    //    url: '/users',
-    //    templateUrl: '/App/Main/views/identity/users.html',
-    //    data: { pageTitle: "关于我们" },
-    //    controller: "app.admin.identity.users",
-    //    menu: 'Administration.Users',
-    //    resolve: {
-    //        deps: [
-    //            "$ocLazyLoad",
-    //            function ($ocLazyLoad) {
-    //                return $ocLazyLoad.load({
+    $stateProvider.state('users', {
+        url: '/users',
+        templateUrl: '/App/Main/views/identity/users.html',
+        data: { pageTitle: "关于我们" },
+        controller: "app.admin.identity.users",
+        menu: 'Administration.Users',
+        resolve: {
+            deps: [
+                "$ocLazyLoad",
+                function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
 
-    //                    insertBefore: "#ng_load_plugins_before",
-    //                    files: [
+                        insertBefore: "#ng_load_plugins_before",
+                        files: [
 
-    //                        '/App/Main/views/identity/users.js'
-    //                    ]
-    //                });
-    //            }
-    //        ]
-    //    }
-    //});
+                            '/App/Main/views/identity/users.js'
+                        ]
+                    });
+                }
+            ]
+        }
+    });
 
 }]);
