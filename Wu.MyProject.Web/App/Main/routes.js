@@ -1,4 +1,15 @@
-﻿appModule.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
+﻿var kendofiles = [
+     "/Scripts/assets/global/plugins/kendoui/kendo.common.min.css",
+     //"/Scripts/assets/global/plugins/kendoui/kendo.office365.min.css",
+      "/Scripts/assets/global/plugins/kendoui/kendo.bootstrap.min.css",
+     "/Scripts/assets/global/plugins/kendoui/kendo.web.min.js",
+     "/Scripts/assets/global/plugins/kendoui/cultures/kendo.messages.zh-CN.min.js",
+     "/Scripts/assets/global/plugins/kendoui/cultures/kendo.culture.zh-CN.min.js"
+];
+
+
+
+appModule.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/dashboard");
     $stateProvider.state('HomePage', {
         url: '/dashboard',
@@ -52,7 +63,7 @@
     $stateProvider.state('users', {
         url: '/users',
         templateUrl: '/App/Main/views/identity/users.html',
-        data: { pageTitle: "关于我们" },
+        data: { pageTitle: "用户信息" },
         controller: "app.admin.identity.users",
         menu: 'Administration.Users',
         resolve: {
@@ -62,10 +73,12 @@
                     return $ocLazyLoad.load({
 
                         insertBefore: "#ng_load_plugins_before",
-                        files: [
+                        
 
-                            '/App/Main/views/identity/users.js'
-                        ]
+                        files: kendofiles
+                                    .concat([
+                                    '/App/Main/views/identity/users.js'
+                                ])
                     });
                 }
             ]

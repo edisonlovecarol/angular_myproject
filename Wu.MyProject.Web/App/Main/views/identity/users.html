@@ -1,4 +1,59 @@
-﻿<div ng-controller="app.admin.identity.users as vm">
+﻿
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="#/dashboard">主页</a>
+            <i class="fa fa-angle-right"></i>
+        </li>
+        <li>
+            <a href="#" ng-bind="$state.current.data.pageTitle"></a>
+        </li>
+    </ul>
+    <div class="page-toolbar"></div>
+</div>
+<!--<h3 class="page-title" ng-bind="$state.current.data.pageTitle"></h3>-->
 
-    {{vm.title}}
+
+
+
+<div class="portlet box green col-lg-8" ng-controller="app.admin.identity.users">
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="fa fa-cogs"></i><span ng-bind="title"></span>
+        </div>
+        <div class="tools">
+            <a href="javascript:;" class="collapse"></a>
+            <a href="javascript:;" class="fullscreen"></a>
+        </div>
+    </div>
+    <div class="portlet-body flip-scroll">
+        <kendo-grid options="gridOptions"></kendo-grid>
+    </div>
+    <!--<div ng-controller="app.admin.identity.users.setpermission">
+        <script type="text/ng-template" id="identity-users-setpermission">
+            <div class="modal-header">
+                <h4 class="modal-title">设置权限：{{user.UserName}}</h4>
+            </div>
+            <div class="modal-body">
+                <tabset class="tab-container tabbable-line">
+                    <tab>
+                        <tab-heading><i class="fa fa-users"></i>角色设置</tab-heading>
+                        <ul class="md-checkbox-list list-inline" style="list-style-type: none; margin: 0; padding: 0;">
+                            <role class="md-checkbox" ng-repeat="role in roles" />
+                        </ul>
+                    </tab>
+                    <tab>
+                        <tab-heading><i class="fa fa-tree"></i>功能设置</tab-heading>
+                        <div style="background-color:yellow;">
+                            <p>功能设置内容</p>
+                        </div>
+                    </tab>
+                </tabset>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" ng-click="submit()"><i class="fa fa-check"> </i> 确定</button>
+                <button class="btn btn-warning" ng-click="cancel()">取消</button>
+            </div>
+        </script>
+    </div>-->
 </div>

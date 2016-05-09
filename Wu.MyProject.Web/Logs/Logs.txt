@@ -33097,3 +33097,772 @@ System.NullReferenceException: 未将对象引用设置到对象的实例。
    在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
    在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
    在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+DEBUG 2016-05-09 16:16:33,863 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-09 16:16:35,482 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-09 16:16:35,485 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,486 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,487 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,487 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,487 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,487 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,487 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,487 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,487 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,487 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,487 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,487 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,488 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:16:35,491 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-09 16:16:35,508 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:16:35,508 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:16:35,508 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:16:35,508 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:16:37,736 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-09 16:16:37,741 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-09 16:16:37,742 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-09 16:16:37,742 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-09 16:16:37,743 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-09 16:16:38,892 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 6 classes defines auto mapping attributes
+DEBUG 2016-05-09 16:16:38,892 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Authorization.Users.Dto.UserListDto
+DEBUG 2016-05-09 16:16:39,009 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2016-05-09 16:16:39,011 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-09 16:16:39,014 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-09 16:16:39,015 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-09 16:16:39,016 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-09 16:16:39,032 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-09 16:16:39,033 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-09 16:16:39,034 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-09 16:16:39,034 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-09 16:16:44,383 [7    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:16:44,384 [7    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:16:44,428 [7    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:16:44,428 [7    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:16:45,579 [7    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:16:45,579 [7    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:16:45,580 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:16:45,580 [7    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:16:45,580 [7    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-09 16:22:17,728 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-09 16:22:22,820 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-09 16:22:22,823 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,824 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,824 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,825 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:22:22,829 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-09 16:22:22,847 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:22:22,847 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:22:22,847 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:22:22,847 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:22:24,810 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-09 16:22:24,815 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-09 16:22:24,815 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-09 16:22:24,816 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-09 16:22:24,817 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-09 16:22:26,060 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 6 classes defines auto mapping attributes
+DEBUG 2016-05-09 16:22:26,060 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Authorization.Users.Dto.UserListDto
+DEBUG 2016-05-09 16:22:26,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2016-05-09 16:22:26,176 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-09 16:22:26,179 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-09 16:22:26,180 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-09 16:22:26,180 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-09 16:22:26,196 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-09 16:22:26,197 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-09 16:22:26,198 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-09 16:22:26,198 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-09 16:22:30,618 [7    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:22:30,619 [7    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:22:31,276 [6    ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:22:31,276 [6    ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:22:31,277 [6    ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:22:31,277 [6    ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:22:31,277 [6    ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+DEBUG 2016-05-09 16:23:18,893 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-05-09 16:23:23,024 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2016-05-09 16:23:23,027 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,029 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,029 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,029 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,029 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,029 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.7.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,029 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,030 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.7.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,030 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectApplicationModule, Wu.MyProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,030 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectCoreModule, Wu.MyProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,030 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.MyProjectDataModule, Wu.MyProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,030 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Web.MyProjectWebModule, Wu.MyProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,030 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Wu.MyProject.Api.MyProjectWebApiModule, Wu.MyProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-05-09 16:23:23,034 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2016-05-09 16:23:23,053 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:23:23,053 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:23:23,053 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:23:23,053 [1    ] o.Configuration.LanguageManagementConfig - Converted MyProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-05-09 16:23:25,073 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-05-09 16:23:25,078 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-05-09 16:23:25,078 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-05-09 16:23:25,079 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-05-09 16:23:25,080 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MyProject
+DEBUG 2016-05-09 16:23:26,304 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 6 classes defines auto mapping attributes
+DEBUG 2016-05-09 16:23:26,304 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Authorization.Users.Dto.UserListDto
+DEBUG 2016-05-09 16:23:26,416 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2016-05-09 16:23:26,417 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-05-09 16:23:26,421 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-05-09 16:23:26,421 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-05-09 16:23:26,422 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Wu.MyProject.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2016-05-09 16:23:26,440 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-05-09 16:23:26,441 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-05-09 16:23:26,442 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-05-09 16:23:26,442 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Wu.MyProject.Sessions.ISessionAppService' with service name 'app/session'.
+WARN  2016-05-09 16:23:30,943 [7    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:23:30,943 [7    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:23:31,096 [11   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:23:31,097 [11   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:23:31,097 [11   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:23:31,097 [11   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:23:31,098 [11   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:05,194 [31   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:05,194 [31   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:05,873 [34   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:05,873 [34   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:05,873 [34   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:05,874 [34   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:05,874 [34   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:25,981 [30   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:25,981 [30   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:26,652 [33   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:26,652 [33   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:26,653 [33   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:26,653 [33   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:26:26,653 [33   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+ERROR 2016-05-09 16:26:32,754 [28   ] lers.Filters.AbpExceptionFilterAttribute - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wu.MyProject.Utility.Query.QueryModel..ctor(FilterGroup filter) 位置 e:\工作项目\MyProject\Wu.MyProject.Utility\Query\QueryModel.cs:行号 20
+   在 Wu.MyProject.Authorization.Users.UserAppService.<GetUsers>d__0.MoveNext() 位置 e:\工作项目\MyProject\Wu.MyProject.Application\Authorization\Users\UserAppService.cs:行号 34
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__c`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wu.MyProject.Utility.Query.QueryModel..ctor(FilterGroup filter) 位置 e:\工作项目\MyProject\Wu.MyProject.Utility\Query\QueryModel.cs:行号 20
+   在 Wu.MyProject.Authorization.Users.UserAppService.<GetUsers>d__0.MoveNext() 位置 e:\工作项目\MyProject\Wu.MyProject.Application\Authorization\Users\UserAppService.cs:行号 34
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__c`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2016-05-09 16:30:02,132 [52   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:02,132 [52   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:02,344 [52   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:02,344 [52   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:02,345 [52   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:02,345 [52   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:02,345 [52   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+ERROR 2016-05-09 16:30:13,210 [55   ] lers.Filters.AbpExceptionFilterAttribute - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wu.MyProject.Utility.Query.QueryModel..ctor(FilterGroup filter) 位置 e:\工作项目\MyProject\Wu.MyProject.Utility\Query\QueryModel.cs:行号 20
+   在 Wu.MyProject.Authorization.Users.UserAppService.<GetUsers>d__0.MoveNext() 位置 e:\工作项目\MyProject\Wu.MyProject.Application\Authorization\Users\UserAppService.cs:行号 34
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__c`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wu.MyProject.Utility.Query.QueryModel..ctor(FilterGroup filter) 位置 e:\工作项目\MyProject\Wu.MyProject.Utility\Query\QueryModel.cs:行号 20
+   在 Wu.MyProject.Authorization.Users.UserAppService.<GetUsers>d__0.MoveNext() 位置 e:\工作项目\MyProject\Wu.MyProject.Application\Authorization\Users\UserAppService.cs:行号 34
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__c`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2016-05-09 16:30:33,328 [45   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:33,328 [45   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:33,456 [55   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:33,457 [55   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:33,457 [55   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:33,457 [55   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:30:33,457 [55   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+ERROR 2016-05-09 16:31:06,377 [37   ] lers.Filters.AbpExceptionFilterAttribute - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wu.MyProject.Utility.Query.QueryModel..ctor(FilterGroup filter) 位置 e:\工作项目\MyProject\Wu.MyProject.Utility\Query\QueryModel.cs:行号 20
+   在 Wu.MyProject.Authorization.Users.UserAppService.<GetUsers>d__0.MoveNext() 位置 e:\工作项目\MyProject\Wu.MyProject.Application\Authorization\Users\UserAppService.cs:行号 34
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__c`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wu.MyProject.Utility.Query.QueryModel..ctor(FilterGroup filter) 位置 e:\工作项目\MyProject\Wu.MyProject.Utility\Query\QueryModel.cs:行号 20
+   在 Wu.MyProject.Authorization.Users.UserAppService.<GetUsers>d__0.MoveNext() 位置 e:\工作项目\MyProject\Wu.MyProject.Application\Authorization\Users\UserAppService.cs:行号 34
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__c`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2016-05-09 16:37:50,842 [59   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:37:50,842 [59   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:37:50,995 [59   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:37:50,996 [59   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:37:50,997 [59   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:37:50,998 [59   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:37:50,998 [59   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+ERROR 2016-05-09 16:37:55,625 [71   ] lers.Filters.AbpExceptionFilterAttribute - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wu.MyProject.Utility.Query.QueryModel..ctor(FilterGroup filter) 位置 e:\工作项目\MyProject\Wu.MyProject.Utility\Query\QueryModel.cs:行号 20
+   在 Wu.MyProject.Authorization.Users.UserAppService.<GetUsers>d__0.MoveNext() 位置 e:\工作项目\MyProject\Wu.MyProject.Application\Authorization\Users\UserAppService.cs:行号 34
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__c`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wu.MyProject.Utility.Query.QueryModel..ctor(FilterGroup filter) 位置 e:\工作项目\MyProject\Wu.MyProject.Utility\Query\QueryModel.cs:行号 20
+   在 Wu.MyProject.Authorization.Users.UserAppService.<GetUsers>d__0.MoveNext() 位置 e:\工作项目\MyProject\Wu.MyProject.Application\Authorization\Users\UserAppService.cs:行号 34
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__c`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2016-05-09 16:39:30,068 [69   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:39:30,068 [69   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:39:30,616 [81   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:39:30,616 [81   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:39:30,617 [81   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:39:30,617 [81   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:39:30,617 [81   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+ERROR 2016-05-09 16:40:53,527 [95   ] lers.Filters.AbpExceptionFilterAttribute - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wu.MyProject.Utility.Query.QueryModel..ctor(FilterGroup filter) 位置 e:\工作项目\MyProject\Wu.MyProject.Utility\Query\QueryModel.cs:行号 20
+   在 Wu.MyProject.Authorization.Users.UserAppService.<GetUsers>d__0.MoveNext() 位置 e:\工作项目\MyProject\Wu.MyProject.Application\Authorization\Users\UserAppService.cs:行号 34
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__c`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Wu.MyProject.Utility.Query.QueryModel..ctor(FilterGroup filter) 位置 e:\工作项目\MyProject\Wu.MyProject.Utility\Query\QueryModel.cs:行号 20
+   在 Wu.MyProject.Authorization.Users.UserAppService.<GetUsers>d__0.MoveNext() 位置 e:\工作项目\MyProject\Wu.MyProject.Application\Authorization\Users\UserAppService.cs:行号 34
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__10`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__c`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__3`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2016-05-09 16:44:20,035 [99   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:44:20,035 [99   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:44:21,192 [95   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:44:21,192 [95   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:44:21,192 [95   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:44:21,193 [95   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:44:21,193 [95   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-09 16:55:53,854 [31   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:55:53,854 [31   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:55:54,164 [33   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:55:54,164 [33   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:55:54,164 [33   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:55:54,165 [33   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:55:54,165 [33   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-09 16:57:45,949 [33   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:57:45,949 [33   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:57:46,503 [34   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:57:46,503 [34   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:57:46,503 [34   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:57:46,504 [34   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:57:46,504 [34   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-09 16:58:44,683 [11   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:58:44,683 [11   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:58:44,884 [11   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:58:44,884 [11   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:58:44,885 [11   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:58:44,885 [11   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:58:44,886 [11   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:39,365 [77   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:39,365 [77   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:39,562 [45   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:39,562 [45   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:39,563 [45   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:39,563 [45   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:39,563 [45   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:53,180 [11   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:53,181 [11   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:53,367 [49   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:53,367 [49   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:53,368 [49   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:53,368 [49   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 16:59:53,368 [49   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-09 17:12:32,874 [62   ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 17:12:32,875 [62   ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 17:12:33,073 [14   ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 17:12:33,074 [14   ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 17:12:33,074 [14   ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 17:12:33,074 [14   ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 17:12:33,075 [14   ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-09 17:44:25,572 [9    ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 17:44:25,572 [9    ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 17:44:25,793 [115  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 17:44:25,794 [115  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 17:44:25,794 [115  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 17:44:25,794 [115  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 17:44:25,794 [115  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-09 17:45:19,613 [121  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 17:45:19,614 [121  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 17:45:19,930 [121  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 17:45:19,931 [121  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 17:45:19,931 [121  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 17:45:19,931 [121  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 17:45:19,931 [121  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+WARN  2016-05-09 17:46:51,343 [117  ] Abp.Logging.LogHelper                    - Can not find 'Administration' in localization source 'MyProject'!
+WARN  2016-05-09 17:46:51,343 [117  ] Abp.Logging.LogHelper                    - Can not find 'Users' in localization source 'MyProject'!
+WARN  2016-05-09 17:46:51,638 [117  ] Abp.Logging.LogHelper                    - Can not find 'YouCanBackToYourAccount' in localization source 'MyProject'!
+WARN  2016-05-09 17:46:51,638 [117  ] Abp.Logging.LogHelper                    - Can not find 'BackToMyAccount' in localization source 'MyProject'!
+WARN  2016-05-09 17:46:51,638 [117  ] Abp.Logging.LogHelper                    - Can not find 'ChangePassword' in localization source 'MyProject'!
+WARN  2016-05-09 17:46:51,639 [117  ] Abp.Logging.LogHelper                    - Can not find 'ChangeProfilePicture' in localization source 'MyProject'!
+WARN  2016-05-09 17:46:51,639 [117  ] Abp.Logging.LogHelper                    - Can not find 'MySettings' in localization source 'MyProject'!
+ERROR 2016-05-09 17:47:05,719 [129  ] lers.Filters.AbpExceptionFilterAttribute - Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   在 Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.UserAppServiceProxy.CreateOrUpdateUser(CreateOrUpdateUserInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception)
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateOrUpdateUser(CreateOrUpdateUserInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__7(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   在 Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.UserAppServiceProxy.CreateOrUpdateUser(CreateOrUpdateUserInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception)
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateOrUpdateUser(CreateOrUpdateUserInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__7(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2016-05-09 17:47:05,719 [129  ] Abp.Logging.LogHelper                    - There are 2 validation errors:
+WARN  2016-05-09 17:47:05,719 [129  ] Abp.Logging.LogHelper                    - User 字段是必需的。 (User)
+WARN  2016-05-09 17:47:05,719 [129  ] Abp.Logging.LogHelper                    - AssignedRoleNames 字段是必需的。 (AssignedRoleNames)
+ERROR 2016-05-09 17:47:19,444 [129  ] lers.Filters.AbpExceptionFilterAttribute - Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   在 Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.UserAppServiceProxy.CreateOrUpdateUser(CreateOrUpdateUserInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception)
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateOrUpdateUser(CreateOrUpdateUserInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__7(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   在 Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.UserAppServiceProxy.CreateOrUpdateUser(CreateOrUpdateUserInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception)
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateOrUpdateUser(CreateOrUpdateUserInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__7(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2016-05-09 17:47:19,445 [129  ] Abp.Logging.LogHelper                    - There are 2 validation errors:
+WARN  2016-05-09 17:47:19,445 [129  ] Abp.Logging.LogHelper                    - User 字段是必需的。 (User)
+WARN  2016-05-09 17:47:19,445 [129  ] Abp.Logging.LogHelper                    - AssignedRoleNames 字段是必需的。 (AssignedRoleNames)
