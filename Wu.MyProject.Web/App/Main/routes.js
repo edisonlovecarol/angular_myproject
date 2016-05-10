@@ -2,6 +2,7 @@
      "/Scripts/assets/global/plugins/kendoui/kendo.common.min.css",
      //"/Scripts/assets/global/plugins/kendoui/kendo.office365.min.css",
       "/Scripts/assets/global/plugins/kendoui/kendo.bootstrap.min.css",
+     "/Scripts/assets/global/plugins/kendoui/kendo.all.min.js",
      "/Scripts/assets/global/plugins/kendoui/kendo.web.min.js",
      "/Scripts/assets/global/plugins/kendoui/cultures/kendo.messages.zh-CN.min.js",
      "/Scripts/assets/global/plugins/kendoui/cultures/kendo.culture.zh-CN.min.js"
