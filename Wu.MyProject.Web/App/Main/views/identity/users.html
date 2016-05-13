@@ -1,7 +1,9 @@
 ﻿
 <div class="page-bar">
     <ul class="page-breadcrumb">
+
         <li>
+            <i class="fa fa-home"></i>
             <a href="#/dashboard">主页</a>
             <i class="fa fa-angle-right"></i>
         </li>
@@ -16,7 +18,8 @@
 
 
 
-<div class="portlet box green col-lg-8" ng-controller="app.admin.identity.users">
+<div class="portlet box green col-md-12" ng-controller="app.admin.identity.users">
+
     <div class="portlet-title">
         <div class="caption">
             <i class="fa fa-cogs"></i><span ng-bind="title"></span>
@@ -31,8 +34,58 @@
         <!--<button kendo-button ng-click="update()">
             Update from code
         </button>-->
-        <div kendo-toolbar k-options="toolbarOptions"></div>
-        <kendo-grid options="gridOptions"></kendo-grid>
+        <!--<div kendo-toolbar k-options="toolbarOptions"></div>-->
+
+        <div class="table-toolbar">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="btn-group">
+                        <button id="sample_editable_1_new" class="btn green" ng-click="toolbarClick()">
+                            新增 <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="btn-group pull-right">
+                        <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            工具 <i class="fa fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a href="javascript:;">
+                                    导出
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    打印
+                                </a>
+                            </li>
+                      
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script id="template" type="text/x-kendo-template">
+
+            <!--<a class="k-button" href="\#" ng-click="toolbarClick()">新增用户</a>-->
+            
+
+        </script>
+
+        <script id="button-template" type="text/x-kendo-template" >
+            <a  class="btn default btn-xs green" ng-click="EditClick()">
+                <i class="fa fa-edit"></i> 编辑
+            </a>
+            
+            <a href="javascript:;" class="btn default btn-xs black">
+                <i class="fa fa-trash-o"></i> 删除
+            </a>
+        </script>
+
+        <kendo-grid options="gridOptions" k-toolbar="toolbarTemplate"></kendo-grid>
     </div>
     <!--<div ng-controller="app.admin.identity.users.setpermission">
         <script type="text/ng-template" id="identity-users-setpermission">
@@ -62,3 +115,4 @@
         </script>
     </div>-->
 </div>
+

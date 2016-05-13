@@ -10,6 +10,8 @@ namespace Wu.MyProject
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
+            //Custom DTO auto-mappings
+            CustomDtoMapper.CreateMappings();
         }
     }
 }

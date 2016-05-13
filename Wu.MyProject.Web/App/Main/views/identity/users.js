@@ -1,4 +1,6 @@
-﻿
+﻿/// <reference path="user/createOrEditModal.cshtml" />
+/// <reference path="user/createOrEditModal.cshtml" />
+
 
 var appName = "appModule";
 //angular.module(appName).controller("app.admin.identity.users", [
@@ -18,18 +20,64 @@ var appName = "appModule";
 
 
 angular.module(appName).controller('app.admin.identity.users', [
-    'abp.services.app.user', '$scope', "$state", function(userService, $scope, $state) {
+    'abp.services.app.user', '$scope', "$state", '$modal', function (userService, $scope, $state, $modal) {
         $scope.title = $state.current.data.pageTitle;
 
-
+        var vm = this;
         $scope.permissions = {
             createPerson: abp.auth.hasPermission('Pages.Tenant.PhoneBook.CreatePerson'),
             deletePerson: abp.auth.hasPermission('Pages.Tenant.PhoneBook.DeletePerson')
         };
+        $scope.toolbarTemplate = $("#template").html();
 
+        $scope.toolbarClick = function() {
+            openCreateOrEditUserModal(null);
+            
 
+        }
+        vm.editUser = function (user) {
+            openCreateOrEditUserModal(user.id);
+        };
 
-        
+        vm.deleteUser = function (user) {
+            if (user.userName == app.consts.userManagement.defaultAdminUserName) {
+                abp.message.warn(app.localize("{0}UserCannotBeDeleted", app.consts.userManagement.defaultAdminUserName));
+                return;
+            }
+
+            abp.message.confirm(
+                app.localize('UserDeleteWarningMessage', user.userName),
+                function (isConfirmed) {
+                    if (isConfirmed) {
+                        userService.deleteUser({
+                            id: user.id
+                        }).success(function () {
+                            vm.getUsers();
+                            abp.notify.success(app.localize('SuccessfullyDeleted'));
+                        });
+                    }
+                }
+            );
+        };
+
+        function openCreateOrEditUserModal(userId) {
+            var modalInstance = $modal.open({
+                templateUrl: '~/App/Main/views/identity/user/createOrEditModal.cshtml',
+                
+                controller: 'common.views.users.createOrEditModal as vm',
+                backdrop: 'static',
+                resolve: {
+                    userId: function () {
+                        return userId;
+                    }
+                }
+            });
+
+            modalInstance.result.then(function (result) {
+              //  $.osharp.kendo.grid.Options.dataSource.read();
+                $.osharp.dataSource.read();
+            });
+        }
        
         
         $scope.gridOptions = $.osharp.kendo.grid.Options({
@@ -52,26 +100,44 @@ angular.module(appName).controller('app.admin.identity.users', [
                     surname: { validation: { required: true } },
                     emailAddress: { validation: { required: true } },
                     isActive: { type: "boolean" },
+                    shouldChangePasswordOnNextLogin: { type: "boolean" },
                     lastLoginTime: { type: "date", editable: false }
                     
 
                 }
+                
             },
             columns: [
                 //权限判断
-                { command: [{ template: '<a ng-if="permissions.createPerson" class="k-button" href="\\#" onclick="return toolbar_click()">Command</a>' }], width: 90 },
+                //{ command: [{ template: '<a ng-if="permissions.createPerson" class="k-button" href="\\#" onclick="return toolbar_click()">Command</a>' }], width: 90 },
                 { field: "id", title: "编号", width: 75 },
                 { field: "name", title: "姓名" },
                 { field: "userName", title: "用户名" },
                 { field: "emailAddress", title: "邮箱地址" },
                 { field: "isActive", title: "是否可用", template: function (d) { return $.osharp.tools.renderBoolean(d.isActive); } },
-                { field: "lastLoginTime", title: "最后登录时间", format: "{0: yyyy-MM-dd HH:mm}" }
-    
+                { field: "shouldChangePasswordOnNextLogin", title: "下次是否重置密码", template: function (d) { return $.osharp.tools.renderBoolean(d.shouldChangePasswordOnNextLogin); }, hidden: true },
+                { field: "lastLoginTime", title: "最后登录时间", format: "{0: yyyy-MM-dd HH:mm}" },
+                {
+                    command: [{ text: "编辑", className: "btn default btn-xs green", click: function (e) { var tr = $(e.target).closest("tr"); var user = this.dataItem(tr); vm.editUser(user) } },
+                              { text: "删除", className: "btn default btn-xs green", click: function (e) { var tr = $(e.target).closest("tr"); var user = this.dataItem(tr); vm.deleteUser(user) } }
+
+                    ],
+                              title: "操作", width: "180px"
+                },
+                
+                 //{ command: { text: "View", template: kendo.template($("#button-template").html()) }, title: "操作", width: "180px" }
                 
                
             ],
-             editable: "popup",
 
+            dataBound: function (e) {
+                var par = e;
+            },
+            
+             editable: {
+                 mode: "popup",
+                 template: kendo.template($("#template").html())
+             },
 
             toolbar: ["create", "save", "cancel"]
         }
@@ -79,59 +145,7 @@ angular.module(appName).controller('app.admin.identity.users', [
         );
 
 
-        $scope.toolbarOptions = {
-            items: [
-                { type: "button", text: "Button" },
-                { type: "button", text: "Toggle Button", togglable: true },
-                {
-                    type: "splitButton",
-                    text: "Insert",
-                    menuButtons: [
-                        { text: "Insert above", icon: "insert-n" },
-                        { text: "Insert between", icon: "insert-m" },
-                        { text: "Insert below", icon: "insert-s" }
-                    ]
-                },
-                { type: "separator" },
-                { template: "<label>Format:</label>" },
-                {
-                    template: "<input kendo-drop-down-list k-options='formatOptions' style='width: 150px;' />",
-                    overflow: "never"
-                },
-                { type: "separator" },
-                {
-                    type: "buttonGroup",
-                    buttons: [
-                        { spriteCssClass: "k-tool-icon k-justifyLeft", text: "Left", togglable: true, group: "text-align" },
-                        { spriteCssClass: "k-tool-icon k-justifyCenter", text: "Center", togglable: true, group: "text-align" },
-                        { spriteCssClass: "k-tool-icon k-justifyRight", text: "Right", togglable: true, group: "text-align" }
-                    ]
-                },
-                {
-                    type: "buttonGroup",
-                    buttons: [
-                        { spriteCssClass: "k-tool-icon k-bold", text: "Bold", togglable: true, showText: "overflow" },
-                        { spriteCssClass: "k-tool-icon k-italic", text: "Italic", togglable: true, showText: "overflow" },
-                        { spriteCssClass: "k-tool-icon k-underline", text: "Underline", togglable: true, showText: "overflow" }
-                    ]
-                },
-                {
-                    type: "button",
-                    text: "Action",
-                    overflow: "always"
-                },
-                {
-                    type: "button",
-                    text: "Another Action",
-                    overflow: "always"
-                },
-                {
-                    type: "button",
-                    text: "Something else here",
-                    overflow: "always"
-                }
-            ]
-        };
+
 
 
     }]);

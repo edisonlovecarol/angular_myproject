@@ -78,7 +78,9 @@ appModule.config(["$stateProvider", "$urlRouterProvider", function ($stateProvid
 
                         files: kendofiles
                                     .concat([
-                                    '/App/Main/views/identity/users.js'
+                                    '/App/Main/views/identity/users.js',
+                                    '/App/Main/views/identity/user/createOrEditModal.js'
+                                    //'/App/Main/views/identity/user/createOrEditModal.cshtml'
                                 ])
                     });
                 }

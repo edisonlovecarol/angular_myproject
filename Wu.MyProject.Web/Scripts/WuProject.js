@@ -3,6 +3,9 @@
 })(jQuery);
 (function ($) {
     //工具
+
+    
+    $.osharp.dataSource={}
     $.osharp.tools = {
         url: {
             encode: function (url) {
@@ -70,7 +73,7 @@
 
 
     $.osharp.qid = {};
-
+   
     //数据查询
     $.osharp.filter = {
         Rule: function (field, value, operate) {
@@ -211,8 +214,7 @@
 
     $.osharp.kendo.grid = {
         //处理KendoUI到OSharp框架的查询参数
-
-       
+        
 
         readParameterMap: function (options, funcFieldReplace, QueryData) {
 
@@ -268,7 +270,8 @@
             if (!options.url) {
                 throw ("url must be defined");
             }
-            var dataSource = new kendo.data.DataSource({
+            // var dataSource = new kendo.data.DataSource({
+            $.osharp.dataSource = new kendo.data.DataSource({
                 transport: {
                     read: {
                         url: options.url.read ? options.url.read : undefined,
@@ -357,7 +360,7 @@
 
         });
             return {
-                dataSource: dataSource,
+                dataSource: $.osharp.dataSource,
                 columns: options.columns,
                 toolbar: options.toolbar != undefined ? options.toolbar : ["create", "save", "cancel"],
                 navigatable: true,
@@ -371,6 +374,7 @@
                 sortable: options.sortable != undefined ? options.sortable : { mode: "multiple", allowUnsort: true },
                 pageable: options.pageable != undefined ? options.pageable : { refresh: true, pageSizes: [10, 15, 30, "all"], buttonCount: 5 },
                 editable: options.editable != undefined ? options.editable : { mode: "incell", confirmation: true },
+                dataBound: options.dataBound,
                 saveChanges: function (e) {
                     if (!confirm("是否提交对表格的更改？")) {
                         e.preventDefault();
