@@ -18,7 +18,7 @@
 
 
 
-<div class="portlet box green col-md-12" ng-controller="app.admin.identity.users">
+<div class="portlet box green col-md-12" ng-controller="app.admin.identity.users as vm">
 
     <div class="portlet-title">
         <div class="caption">
@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="btn-group">
-                        <button id="sample_editable_1_new" class="btn green" ng-click="toolbarClick()">
+                        <button id="sample_editable_1_new" class="btn green" ng-click="toolbarClick()" ng-if="vm.permissions.createPerson">
                             新增 <i class="fa fa-plus"></i>
                         </button>
                     </div>
@@ -76,7 +76,7 @@
         </script>
 
         <script id="button-template" type="text/x-kendo-template" >
-            <a  class="btn default btn-xs green" ng-click="EditClick()">
+            <a class="btn default btn-xs green" ng-click="vm.editUser()">
                 <i class="fa fa-edit"></i> 编辑
             </a>
             
@@ -85,7 +85,7 @@
             </a>
         </script>
 
-        <kendo-grid options="gridOptions" k-toolbar="toolbarTemplate"></kendo-grid>
+        <kendo-grid options="gridOptions" k-toolbar="toolbarTemplate" id="grid"></kendo-grid>
     </div>
     <!--<div ng-controller="app.admin.identity.users.setpermission">
         <script type="text/ng-template" id="identity-users-setpermission">

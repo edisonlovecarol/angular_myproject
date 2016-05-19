@@ -8,7 +8,7 @@
     <text name="AboutUs" value="关于我们" />
     <text name="Administration" value="管理" />
     <text name="Roles" value="角色" />
-    <text name="Users" value="用户" />
+    <text name="Users" value="用户管理" />
     <text name="InvalidFormMessage" value="部分输入信息不符合要求，请检查并改正." />
     <text name="InvalidUserNameOrPassword" value="用户名或密码无效" />
     <text name="ThereIsNoTenantDefinedWithName{0}" value="租户 {0}不存在" />
@@ -75,6 +75,7 @@
     <text name="ChangingPermissions" value="更改权限" />
     <text name="EditingUser" value="修改用户" />
     <text name="CreatingNewUser" value="添加用户" />
+    <text name="LoginForUsers" value="用户登录" />
     <text name="Edit" value="修改" />
     <text name="EditingTenant" value="修改租户" />
     <text name="CreatingNewTenant" value="添加租户" />

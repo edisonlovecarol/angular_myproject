@@ -284,10 +284,15 @@
     <Content Include="App\Main\views\home\home.js" />
     <Content Include="App\Main\views\identity\about.html" />
     <Content Include="App\Main\views\identity\about.js" />
+    <Content Include="App\Main\views\identity\role\createOrEditModal.css" />
+    <Content Include="App\Main\views\identity\role\createOrEditModal.js" />
+    <Content Include="App\Main\views\identity\role\role.html" />
+    <Content Include="App\Main\views\identity\role\role.js" />
     <Content Include="App\Main\views\identity\users.html" />
     <Content Include="App\Main\views\identity\users.js" />
     <Content Include="App\Main\views\identity\user\createOrEditModal.css" />
     <Content Include="App\Main\views\identity\user\createOrEditModal.js" />
+    <Content Include="App\Main\views\identity\user\permissionsModal.js" />
     <Content Include="App\Main\views\layout\footer.js" />
     <Content Include="App\Main\views\layout\header.js" />
     <Content Include="App\Main\views\layout\layout.js" />
@@ -816,6 +821,8 @@
     <Content Include="Common\Styles\core.css.map" />
     <Content Include="Common\Styles\core.less" />
     <Content Include="App\Main\views\identity\user\createOrEditModal.cshtml" />
+    <Content Include="App\Main\views\identity\user\permissionsModal.cshtml" />
+    <Content Include="App\Main\views\identity\role\createOrEditModal.cshtml" />
     <None Include="libs\jquery\jquery.linq-vsdoc.js" />
     <Content Include="libs\jquery\jquery.linq.js" />
     <Content Include="libs\jquery\jquery.linq.min.js" />
@@ -4714,6 +4721,7 @@
     <Compile Include="App_Start\Bundling\CommonBundleConfig.cs" />
     <Compile Include="App_Start\Bundling\ScriptPaths.cs" />
     <Compile Include="App_Start\Bundling\StylePaths.cs" />
+    <Compile Include="App_Start\Exception\MyExceptionHandler.cs" />
     <Compile Include="App_Start\MyProjectNavigationProvider.cs" />
     <Compile Include="App_Start\MyProjectWebModule.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />

@@ -60,32 +60,64 @@ appModule.config(["$stateProvider", "$urlRouterProvider", function ($stateProvid
             ]
         }
     });
+     //用户管理
+    if (abp.auth.hasPermission('Pages.Administration.Users')) {
+        $stateProvider.state('users', {
+            url: '/users',
+            templateUrl: '/App/Main/views/identity/users.html',
+            data: { pageTitle: "用户信息" },
+            controller: "app.admin.identity.users",
+            menu: 'Administration.Users',
+            resolve: {
+                deps: [
+                    "$ocLazyLoad",
+                    function($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            insertBefore: "#ng_load_plugins_before",
 
-    $stateProvider.state('users', {
-        url: '/users',
-        templateUrl: '/App/Main/views/identity/users.html',
-        data: { pageTitle: "用户信息" },
-        controller: "app.admin.identity.users",
-        menu: 'Administration.Users',
-        resolve: {
-            deps: [
-                "$ocLazyLoad",
-                function ($ocLazyLoad) {
-                    return $ocLazyLoad.load({
 
-                        insertBefore: "#ng_load_plugins_before",
-                        
-
-                        files: kendofiles
-                                    .concat([
+                            files: kendofiles
+                                .concat([
                                     '/App/Main/views/identity/users.js',
-                                    '/App/Main/views/identity/user/createOrEditModal.js'
+                                    '/App/Main/views/identity/user/createOrEditModal.js',
+                                    '/App/Main/views/identity/user/permissionsModal.js'
                                     //'/App/Main/views/identity/user/createOrEditModal.cshtml'
                                 ])
-                    });
-                }
-            ]
-        }
-    });
+                        });
+                    }
+                ]
+            }
+        });
+    }
+    //角色管理
+    if (abp.auth.hasPermission('Pages.Administration.Roles')) {
+        $stateProvider.state('roles', {
+            url: '/roles',
+            templateUrl: '/App/Main/views/identity/role/role.html',
+            data: { pageTitle: "角色信息" },
+            controller: "app.admin.identity.roles",
+            menu: 'Administration.Roles',
+            resolve: {
+                deps: [
+                    "$ocLazyLoad",
+                    function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            insertBefore: "#ng_load_plugins_before",
+
+
+                            files: kendofiles
+                                .concat([
+                                    '/App/Main/views/identity/role/role.js',
+                                    '/App/Main/views/identity/role/createOrEditModal.js'
+                                   
+                                    //'/App/Main/views/identity/user/createOrEditModal.cshtml'
+                                ])
+                        });
+                    }
+                ]
+            }
+        });
+    }
+
 
 }]);

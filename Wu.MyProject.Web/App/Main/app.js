@@ -18,7 +18,9 @@ appModule.config(["$controllerProvider", function ($controllerProvider) {
     $controllerProvider.allowGlobals();
 }]);
 
-
+appModule.config(function ($logProvider) {
+    $logProvider.debugEnabled(true);
+});
 
 /* Setup global settings */
 appModule.factory("settings", ["$rootScope", function ($rootScope) {

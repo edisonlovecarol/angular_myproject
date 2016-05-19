@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
+using Abp.Authorization;
 using Abp.Authorization.Users;
 using Abp.AutoMapper;
 using Abp.Extensions;
 using Castle.Core.Internal;
 using Microsoft.AspNet.Identity;
+using Wu.MyProject.Authorization.Dto;
 using Wu.MyProject.Authorization.Roles;
 using Wu.MyProject.Authorization.Users.Dto;
 using Wu.MyProject.Users;
@@ -46,6 +49,8 @@ namespace Wu.MyProject.Authorization.Users
             await FillRoleNames(userListDtos);
             return new PagedResultOutput<UserListDto>(total,userListDtos);
         }
+
+     
 
         public async Task<GetUserForEditOutput> GetUserForEdit(NullableIdInput<long> input)
         {
@@ -91,20 +96,38 @@ namespace Wu.MyProject.Authorization.Users
             }
             return output;
         }
-
-        public Task<GetUserPermissionsForEditOutput> GetUserPermissionsForEdit(IdInput<long> input)
+        /// <summary>
+        /// 获取用户权限
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task<GetUserPermissionsForEditOutput> GetUserPermissionsForEdit(IdInput<long> input)
         {
-            throw new NotImplementedException();
+            var user = await UserManager.GetUserByIdAsync(input.Id);
+            var permissions = PermissionManager.GetAllPermissions();
+            var grantedPermissions = await UserManager.GetGrantedPermissionsAsync(user);
+            return new GetUserPermissionsForEditOutput
+            {
+                Permissions = permissions.MapTo<List<FlatPermissionDto>>().OrderBy(p=>p.DisplayName).ToList(),
+                GrantedPermissionNames = grantedPermissions.Select(p=>p.Name).ToList()
+                
+            };
         }
 
         public Task ResetUserSpecificPermissions(IdInput<long> input)
         {
             throw new NotImplementedException();
         }
-
-        public Task UpdateUserPermissions(UpdateUserPermissionsInput input)
+        /// <summary>
+        /// 更新用户权限
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public async Task UpdateUserPermissions(UpdateUserPermissionsInput input)
         {
-            throw new NotImplementedException();
+            var user = await UserManager.GetUserByIdAsync(input.Id);
+            var grantedPermissions = PermissionManager.GetPermissionsFromNamesByValidating(input.GrantedPermissionNames);
+            await UserManager.SetGrantedPermissionsAsync(user, grantedPermissions);
         }
 
         public async Task CreateOrUpdateUser(CreateOrUpdateUserInput input)
@@ -119,11 +142,27 @@ namespace Wu.MyProject.Authorization.Users
             }
         }
 
-        private Task UpdateUserAsync(CreateOrUpdateUserInput input)
+        private async Task UpdateUserAsync(CreateOrUpdateUserInput input)
         {
-            throw new NotImplementedException();
+            Debug.Assert(input.User.Id != null, "input.User.Id should be set.");
+            var user = await UserManager.FindByIdAsync(input.User.Id.Value);
+            //更新用户属性
+            input.User.MapTo(user);//密码不会被映射
+            if (input.User.Password.IsNullOrEmpty())
+            {
+                CheckErrors(await UserManager.ChangePasswordAsync(user, input.User.Password));
+            }
+            CheckErrors(await UserManager.UpdateAsync(user));
+            //更新角色
+            CheckErrors(await UserManager.SetRoles(user, input.AssignedRoleNames));
+            //发送邮件通知
+            if (input.SendActivationEmail)
+            {
+                user.SetNewEmailConfirmationCode();
+               // await _userEmailer.SendEmailActivationLinkAsync(user, input.User.Password);
+            }
         }
-
+        [AbpAuthorize(PermissionNames.Pages_Administration_Users_Create)]
         protected virtual async Task CreateUserAsync(CreateOrUpdateUserInput input)
         {
             var user = input.User.MapTo<User>();

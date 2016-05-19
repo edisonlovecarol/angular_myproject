@@ -1,0 +1,79 @@
+﻿
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+
+        <li>
+            <i class="fa fa-home"></i>
+            <a href="#/dashboard">主页</a>
+            <i class="fa fa-angle-right"></i>
+        </li>
+        <li>
+            <a href="#" ng-bind="$state.current.data.pageTitle"></a>
+        </li>
+    </ul>
+    <div class="page-toolbar"></div>
+</div>
+<!--<h3 class="page-title" ng-bind="$state.current.data.pageTitle"></h3>-->
+
+
+
+
+<div class="portlet box green col-md-12" ng-controller="app.admin.identity.roles as vm">
+
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="fa fa-cogs"></i><span ng-bind="title"></span>
+        </div>
+        <div class="tools">
+            <a href="javascript:;" class="collapse"></a>
+            <a href="javascript:;" class="fullscreen"></a>
+        </div>
+    </div>
+
+    <div class="portlet-body flip-scroll">
+        <!--<button kendo-button ng-click="update()">
+            Update from code
+        </button>-->
+        <!--<div kendo-toolbar k-options="toolbarOptions"></div>-->
+
+        <div class="table-toolbar">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="btn-group">
+                        <button id="sample_editable_1_new" class="btn green" ng-click="createRole()" ng-if="vm.permissions.createPerson">
+                            新增 <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="btn-group pull-right">
+                        <button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            工具 <i class="fa fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a href="javascript:;">
+                                    导出
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    打印
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <kendo-grid options="gridOptions" k-toolbar="toolbarTemplate" id="grid"></kendo-grid>
+    </div>
+
+</div>
+

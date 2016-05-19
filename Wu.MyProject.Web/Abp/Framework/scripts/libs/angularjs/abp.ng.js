@@ -115,7 +115,7 @@
                         abp.ng.http.showError(error);
 
                         abp.ng.http.logError(error);
-
+                        console.log(error);
                         return $q.reject(ngError);
                     }
 
