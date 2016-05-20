@@ -1,7 +1,9 @@
 ﻿using System.Reflection;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Abp.IO;
 using Abp.Modules;
 using Abp.Web.Mvc;
 using Abp.Zero.Configuration;
@@ -39,6 +41,16 @@ namespace Wu.MyProject.Web
             //Bundling
             AppBundleConfig.RegisterBundles(BundleTable.Bundles);
 
+        }
+
+        public override void PostInitialize()
+        {
+            var server = HttpContext.Current.Server;
+            var appFolders = IocManager.Resolve<AppFolders>();
+            appFolders.SampleProfileImagesFolder = server.MapPath("~/Common/Images/SampleProfilePics");
+            appFolders.TempFileDownloadFolder = server.MapPath("~/Temp/Downloads");
+            try { DirectoryHelper.CreateIfNotExists(appFolders.TempFileDownloadFolder); }
+            catch { }
         }
     }
 }

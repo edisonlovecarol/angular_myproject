@@ -300,6 +300,11 @@
     <Content Include="App\Main\views\layout\sidebar.js" />
     <Content Include="App\Main\views\layout\siderbar1.html" />
     <Content Include="App\Main\views\layout\theme-panel.html" />
+    <Content Include="App\Main\views\organization\createOrEditUnitModal.cshtml" />
+    <None Include="App\Main\views\organization\index.cshtml" />
+    <Content Include="App\Main\views\organization\createOrEditUnitModal.js" />
+    <Content Include="App\Main\views\organization\index.js" />
+    <Content Include="App\Main\views\test.js" />
     <Content Include="Common\Scripts\consts.js" />
     <Content Include="Common\Scripts\helpers.js" />
     <Content Include="Common\Scripts\jquery-custom.js" />
@@ -4715,6 +4720,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\Startup\AppBundleConfig.cs" />
+    <Compile Include="App_Start\AppFolders.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\Bundling\AsIsBundleOrderer.cs" />
     <Compile Include="App_Start\Bundling\BundleExtensions.cs" />
@@ -4727,6 +4733,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MyProjectControllerBase.cs" />
     <Compile Include="Controllers\Results\ChallengeResult.cs" />
@@ -4769,6 +4776,7 @@
     <Folder Include="Scripts\assets\apps\img\" />
     <Folder Include="Scripts\assets\global\plugins\angularjs\plugins\angular-file-upload\uploads\" />
     <Folder Include="Scripts\assets\global\plugins\NewFolder1\" />
+    <Folder Include="Views\File\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Wu.MyProject.Application\Wu.MyProject.Application.csproj">

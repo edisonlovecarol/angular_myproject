@@ -35,6 +35,10 @@ namespace Wu.MyProject.Authorization
             roles.CreateChildPermission(PermissionNames.Pages_Administration_Roles_Delete, L("DeletingRole")); 
             #endregion
 
+            #region 组织机构
+             
+            #endregion
+
         }
 
         private static ILocalizableString L(string name)

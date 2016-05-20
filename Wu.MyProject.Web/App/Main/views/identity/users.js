@@ -60,6 +60,14 @@ angular.module(appName).controller('app.admin.identity.users', [
                 }
             );
         };
+        //导出用户列表
+        vm.exportToExcel=function() {
+            userService.getUsersToExcel({})
+                .success(function (result) {
+                    app.downloadTempFile(result);
+                });
+
+        }
 
         //修改用户权限
         vm.editPermissions = function (user) {

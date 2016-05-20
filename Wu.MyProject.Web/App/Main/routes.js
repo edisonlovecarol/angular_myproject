@@ -118,6 +118,34 @@ appModule.config(["$stateProvider", "$urlRouterProvider", function ($stateProvid
             }
         });
     }
+        //组织机构
+    //if (abp.auth.hasPermission('Pages.Administration.Organizations')) {
+        $stateProvider.state('organizations', {
+            url: '/organizations',
+            templateUrl: '/App/Main/views/organization/index.cshtml',
+            data: { pageTitle: "组织机构信息" },
+            controller: "app.admin.identity.organizations",
+            menu: 'Administration.Organizations',
+            resolve: {
+                deps: [
+                    "$ocLazyLoad",
+                    function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            insertBefore: "#ng_load_plugins_before",
 
+
+                            files: kendofiles
+                                .concat([
+                                    '/App/Main/views/organization/index.js',
+                                   
+                                   
+                                    '/App/Main/views/organization/createOrEditUnitModal.js'
+                                ])
+                        });
+                    }
+                ]
+            }
+        });
+    //}
 
 }]);

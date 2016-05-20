@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Wu.MyProject.Authorization.Users.Dto;
+using Wu.MyProject.Dto;
 using Wu.MyProject.Utility.Query;
 
 namespace Wu.MyProject.Authorization.Users
@@ -15,7 +16,7 @@ namespace Wu.MyProject.Authorization.Users
 
         Task<PagedResultOutput<UserListDto>> GetUsers(FilterGroup filter);
 
-        //Task<FileDto> GetUsersToExcel();
+        Task<FileDto> GetUsersToExcel();
 
         Task<GetUserForEditOutput> GetUserForEdit(NullableIdInput<long> input);
 

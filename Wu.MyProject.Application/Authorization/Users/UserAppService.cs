@@ -16,6 +16,8 @@ using Microsoft.AspNet.Identity;
 using Wu.MyProject.Authorization.Dto;
 using Wu.MyProject.Authorization.Roles;
 using Wu.MyProject.Authorization.Users.Dto;
+using Wu.MyProject.Authorization.Users.Exporting;
+using Wu.MyProject.Dto;
 using Wu.MyProject.Users;
 using Wu.MyProject.Utility.Extensions;
 using Wu.MyProject.Utility.Query;
@@ -25,12 +27,14 @@ namespace Wu.MyProject.Authorization.Users
     public class UserAppService : MyProjectAppServiceBase,IUserAppService
     {
         private readonly RoleManager _roleManager;
+        private readonly IUserListExcelExporter _userListExcelExporter;
         //private readonly IUserListExcelExporter _userListExcelExporter;
         public UserAppService(
-         RoleManager roleManager)
+         RoleManager roleManager,
+            IUserListExcelExporter userListExcelExporter)
         {
             _roleManager = roleManager;
-         
+            _userListExcelExporter = userListExcelExporter;
         }
         
         /// <summary>
@@ -49,8 +53,16 @@ namespace Wu.MyProject.Authorization.Users
             await FillRoleNames(userListDtos);
             return new PagedResultOutput<UserListDto>(total,userListDtos);
         }
+        //文件导出
+        public async Task<FileDto> GetUsersToExcel()
+        {
+            var users = await UserManager.Users.Include(u => u.Roles).ToListAsync();
+            var userListDtos = users.MapTo<List<UserListDto>>();
+            await FillRoleNames(userListDtos);
 
-     
+            return _userListExcelExporter.ExportToFile(userListDtos);
+        }
+
 
         public async Task<GetUserForEditOutput> GetUserForEdit(NullableIdInput<long> input)
         {

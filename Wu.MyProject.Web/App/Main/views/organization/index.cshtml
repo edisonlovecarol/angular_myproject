@@ -1,0 +1,61 @@
+﻿<div ng-controller="app.admin.identity.organizations as vm">
+    <div class="page-bar">
+        <ul class="page-breadcrumb">
+            <li>
+                <a href="#/dashboard">主页</a>
+                <i class="fa fa-angle-right"></i>
+            </li>
+            <li>
+                <a href="#" ng-bind="$state.current.data.pageTitle"></a>
+            </li>
+        </ul>
+        <div class="page-toolbar"></div>
+    </div>
+    <!--<h3 class="page-title" ng-bind="$state.current.data.pageTitle"></h3>-->
+
+
+    <div class="portlet box green col-lg-4">
+
+        <div class="portlet-title">
+            <div class="caption">
+                <!--<span class="caption-subject bold uppercase">-->
+                <i class="fa fa-cogs"></i><span ng-bind="title"></span>
+                <!--</span>-->
+            </div>
+            <div class="actions">
+                <a ng-if="vm.permissions.manageOrganizationTree" ng-click="vm.organizationTree.addUnit(null)" class="btn btn-circle btn-default">
+                    <i class="fa fa-plus"></i> @L("AddRootUnit")
+                </a>
+            </div>
+        </div>
+        <div class="portlet-body">
+            <div id="OrganizationUnitEditTree"></div>
+            <div ng-if="!vm.organizationTree.unitCount" class="text-muted">
+                @L("NoOrganizationUnitDefinedYet")
+               
+            </div>
+        </div>
+
+    </div>
+
+    <div class="portlet box green col-lg-8">
+        <div class="portlet-title">
+            <div class="caption">
+                <i class="fa fa-cogs"></i><span ng-bind="title"></span>
+            </div>
+            <div class="tools">
+                <a href="javascript:;" class="collapse"></a>
+                <a href="javascript:;" class="fullscreen"></a>
+            </div>
+        </div>
+        <div class="portlet-body flip-scroll">
+            <kendo-grid options="vm.gridOptions"></kendo-grid>
+            @*<kendo-grid options="vm.members.mainGridOptions">
+            </kendo-grid>*@
+
+
+          
+        </div>
+
+    </div>
+</div>

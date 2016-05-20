@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="zh-CN">
   <texts>
+    
+    <text name="AddRootUnit" value="新增根部门" />
     <text name="AddSubUnit" value="新增" />
     <text name="PhoneBooks" value="书本管理" />
     <text name="CreateNewPerson" value="新增人员" />
