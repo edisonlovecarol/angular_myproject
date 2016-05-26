@@ -1,4 +1,5 @@
 ﻿using System.Data.Common;
+using System.Data.Entity;
 using Abp.Zero.EntityFramework;
 using Wu.MyProject.Authorization.Roles;
 using Wu.MyProject.MultiTenancy;
@@ -9,7 +10,7 @@ namespace Wu.MyProject.EntityFramework
     public class MyProjectDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
         //TODO: Define an IDbSet for your Entities...
-
+        public virtual IDbSet<DataDictionay.DataDictionay> DataDictionays { get; set; }
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.
          *   But it may cause problems when working Migrate.exe of EF. If you will apply migrations on command line, do not

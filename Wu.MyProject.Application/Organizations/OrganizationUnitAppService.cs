@@ -9,12 +9,12 @@ using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using Abp.Linq.Extensions;
 using Abp.Organizations;
-
+using Wu.MyProject.Authorization;
 using Wu.MyProject.Organizations.Dto;
 
 namespace Wu.MyProject.Organizations
 {
-    
+    [AbpAuthorize(PermissionNames.Pages_Administration_OrganizationUnits)]
     public class OrganizationUnitAppService : MyProjectAppServiceBase, IOrganizationUnitAppService
     {
         private readonly OrganizationUnitManager _organizationUnitManager;
@@ -73,7 +73,7 @@ namespace Wu.MyProject.Organizations
             return null;
         }
 
-       
+       [AbpAuthorize(PermissionNames.Pages_Administration_OrganizationUnits_ManageOrganizationTree)]
         public async Task<OrganizationUnitDto> CreateOrganizationUnit(CreateOrganizationUnitInput input)
         {
             var organizationUnit = new OrganizationUnit(AbpSession.TenantId, input.DisplayName, input.ParentId);
@@ -84,7 +84,7 @@ namespace Wu.MyProject.Organizations
             return organizationUnit.MapTo<OrganizationUnitDto>();
         }
 
-        
+        [AbpAuthorize(PermissionNames.Pages_Administration_OrganizationUnits_ManageOrganizationTree)]
         public async Task<OrganizationUnitDto> UpdateOrganizationUnit(UpdateOrganizationUnitInput input)
         {
             var organizationUnit = await _organizationUnitRepository.GetAsync(input.Id);
@@ -96,7 +96,7 @@ namespace Wu.MyProject.Organizations
             return await CreateOrganizationUnitDto(organizationUnit);
         }
 
-      
+        [AbpAuthorize(PermissionNames.Pages_Administration_OrganizationUnits_ManageOrganizationTree)]
         public async Task<OrganizationUnitDto> MoveOrganizationUnit(MoveOrganizationUnitInput input)
         {
             await _organizationUnitManager.MoveAsync(input.Id, input.NewParentId);
@@ -106,25 +106,25 @@ namespace Wu.MyProject.Organizations
                 );
         }
 
-        
+         [AbpAuthorize(PermissionNames.Pages_Administration_OrganizationUnits_ManageOrganizationTree)]
         public async Task DeleteOrganizationUnit(IdInput<long> input)
         {
             await _organizationUnitManager.DeleteAsync(input.Id);
         }
 
-       
+        [AbpAuthorize(PermissionNames.Pages_Administration_OrganizationUnits_ManageMembers)]
         public async Task AddUserToOrganizationUnit(UserToOrganizationUnitInput input)
         {
             await UserManager.AddToOrganizationUnitAsync(input.UserId, input.OrganizationUnitId);
         }
 
-        
+         [AbpAuthorize(PermissionNames.Pages_Administration_OrganizationUnits_ManageMembers)]
         public async Task RemoveUserFromOrganizationUnit(UserToOrganizationUnitInput input)
         {
             await UserManager.RemoveFromOrganizationUnitAsync(input.UserId, input.OrganizationUnitId);
         }
 
-        
+         [AbpAuthorize(PermissionNames.Pages_Administration_OrganizationUnits_ManageMembers)]
         public async Task<bool> IsInOrganizationUnit(UserToOrganizationUnitInput input)
         {
             return await UserManager.IsInOrganizationUnitAsync(input.UserId, input.OrganizationUnitId);

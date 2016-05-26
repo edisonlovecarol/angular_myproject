@@ -119,7 +119,7 @@ appModule.config(["$stateProvider", "$urlRouterProvider", function ($stateProvid
         });
     }
         //组织机构
-    //if (abp.auth.hasPermission('Pages.Administration.Organizations')) {
+    if (abp.auth.hasPermission('Pages.Administration.OrganizationUnits')) {
         $stateProvider.state('organizations', {
             url: '/organizations',
             templateUrl: '/App/Main/views/organization/index.cshtml',
@@ -137,7 +137,7 @@ appModule.config(["$stateProvider", "$urlRouterProvider", function ($stateProvid
                             files: kendofiles
                                 .concat([
                                     '/App/Main/views/organization/index.js',
-                                   
+                                    '/App/Main/common/lookupModal/lookupModal.js',
                                    
                                     '/App/Main/views/organization/createOrEditUnitModal.js'
                                 ])
@@ -146,6 +146,36 @@ appModule.config(["$stateProvider", "$urlRouterProvider", function ($stateProvid
                 ]
             }
         });
+    }
+    //数据字典
+    //if (abp.auth.hasPermission('Pages.Administration.DataDictionariy')) {
+        $stateProvider.state('dataDictionay', {
+            url: '/dataDictionay',
+            templateUrl: '/App/Main/views/dataDictionay/dataDictionay.cshtml',
+            data: { pageTitle: "数据字典" },
+            controller: "app.admin.identity.dataDictionay",
+            menu: 'Administration.DataDictionariy',
+            resolve: {
+                deps: [
+                    "$ocLazyLoad",
+                    function ($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            insertBefore: "#ng_load_plugins_before",
+
+
+                            files: kendofiles
+                                .concat([
+                                    '/App/Main/views/dataDictionay/dataDictionay.js',
+                                    //'/App/Main/common/lookupModal/lookupModal.js',
+
+                                    '/App/Main/views/dataDictionay/createOrEditUnitModal.js'
+                                ])
+                        });
+                    }
+                ]
+            }
+        });
     //}
+
 
 }]);

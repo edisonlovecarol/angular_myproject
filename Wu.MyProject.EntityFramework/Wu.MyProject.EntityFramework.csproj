@@ -149,6 +149,10 @@
     <Compile Include="Migrations\201605110950211_05-06_Users.Designer.cs">
       <DependentUpon>201605110950211_05-06_Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605250255061_2016-06-25.cs" />
+    <Compile Include="Migrations\201605250255061_2016-06-25.Designer.cs">
+      <DependentUpon>201605250255061_2016-06-25.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyProjectDataModule.cs" />
     <Compile Include="Migrations\SeedData\DefaultEditionsBuilder.cs" />
@@ -197,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605110950211_05-06_Users.resx">
       <DependentUpon>201605110950211_05-06_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605250255061_2016-06-25.resx">
+      <DependentUpon>201605250255061_2016-06-25.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

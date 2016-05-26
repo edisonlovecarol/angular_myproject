@@ -1,7 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="zh-CN">
   <texts>
-    
+    <text name="DataDictionayDeleteWarningMessage" value="你确定要删除字典项：{0} 吗?" />
+    <text name="NewDataDictionay" value="新增字典" />
+    <text name="AddRootDataDic" value="新增根字典" />
+    <text name="ManagingMembers" value="成员管理" />
+    <text name="ManagingOrganizationTree" value="机构树管理" />
+    <text name="OrganizationUnits" value="组织机构管理" />
+    <text name="UserIsAlreadyInTheOrganizationUnit" value="改用户已经存在该部门中,不能重复添加!" />
+    <text name="AddMember" value="新增成员" />
+    <text name="OrganizationUnitDeleteWarningMessage" value="你确定删除部门 {0} 吗？" />
+    <text name="AddedTime" value="新增时间" />
+    <text name="SuccessfullyRemoved" value="移除成功" />
+    <text name="RemoveUserFromOuWarningMessage" value="你确定将用户 {0} 从 {1}中移除吗？" />
+    <text name="SelectAUser" value="选择一个用户" />
     <text name="AddRootUnit" value="新增根部门" />
     <text name="AddSubUnit" value="新增" />
     <text name="PhoneBooks" value="书本管理" />

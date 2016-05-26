@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="en">
   <texts>
+    
+    <text name="DataDictionayDeleteWarningMessage" value="Are you sure to delete dataDictionay {0}?" />
+    <text name="NewDataDictionay" value="Add DataDictionay" />
+    <text name="AddRootDataDic" value="Add RootDataDic" />
     <text name="HomePage" value="Home page" />
     <text name="AboutUs" value="About us" />
     <text name="Administration" value="Administration" />

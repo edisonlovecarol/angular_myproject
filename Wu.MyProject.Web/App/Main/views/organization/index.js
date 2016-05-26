@@ -5,7 +5,7 @@ var appName = "appModule";
  * Created by gff on 2016/3/21.
  */
 angular.module(appName).controller('app.admin.identity.organizations', [
-    'abp.services.app.organizationUnit', '$scope', "$state", '$modal', function (organizationUnitService, $scope, $state, $modal) {
+    'abp.services.app.organizationUnit', '$scope', "$state", '$modal', '$q', 'abp.services.app.commonLookup', 'lookupModal', function (organizationUnitService, $scope, $state, $modal, $q,commonLookupService, lookupModal) {
         $scope.title = $state.current.data.pageTitle;
 
         var vm = this;
@@ -15,8 +15,10 @@ angular.module(appName).controller('app.admin.identity.organizations', [
         });
 
         vm.permissions = {
-            manageOrganizationTree: true,
-            manageMembers: true
+            //manageOrganizationTree: true,
+            //manageMembers: true
+            manageOrganizationTree: abp.auth.hasPermission('Pages.Administration.OrganizationUnits.ManageOrganizationTree'),
+            manageMembers: abp.auth.hasPermission('Pages.Administration.OrganizationUnits.ManageMembers')
         };
        
         
@@ -379,17 +381,103 @@ angular.module(appName).controller('app.admin.identity.organizations', [
            
         
         });
-
-        vm.gridOptions= {
+        vm.members={
+        gridOptions: {
             dataSource: vm.dataSource,
             
-            columns: [
-              { field: "userName", title: "编号", width: 75 },
-             { field: "surname", title: "角色名" }
-            ]
-        }
+            columns:[
+            {
 
-     
+
+                template: function (dataItem) {
+                    return '<div class=\"ui-grid-cell-contents\">' +
+                        '  <button class="btn btn-default btn-xs" ng-click="vm.members.remove(dataItem)"><i class="fa fa-trash-o"></i> ' + app.localize('Delete') + '</button>' +
+                        '</div>';
+                },
+                
+                title: app.localize('Actions'),
+                width: 20
+            },
+             { field: "userName", title: app.localize('UserName'), width: 140 },
+             { field: "addedTime", title: app.localize('AddedTime'), width: 100, format: "{0: yyyy-MM-dd HH:mm}" }
+            
+            ]
+        },
+        add: function (userId) {
+            var ouId = vm.organizationTree.selectedOu.id;
+            if (!ouId) {
+                return;
+            }
+
+            organizationUnitService.addUserToOrganizationUnit({
+                organizationUnitId: ouId,
+                userId: userId
+            }).success(function () {
+                abp.notify.success(app.localize('SuccessfullyAdded'));
+                vm.organizationTree.incrementMemberCount(ouId, 1);
+                vm.dataSource.read();
+            });
+        },
+
+        openAddModal: function () {
+            var ouId = vm.organizationTree.selectedOu.id;
+            if (!ouId) {
+                return;
+            }
+            lookupModal.open({
+
+                title: app.localize('SelectAUser'),
+                serviceMethod: commonLookupService.findUsers,
+
+                canSelect: function (item) {
+                    return $q(function (resolve, reject) {
+                        organizationUnitService.isInOrganizationUnit({
+                            userId: item.value,
+                            organizationUnitId: ouId
+                        }).success(function (result) {
+                            if (result) {
+                                abp.message.warn(app.localize('UserIsAlreadyInTheOrganizationUnit'));
+                            }
+
+                            resolve(!result);
+                        }).catch(function () {
+                            reject();
+                        });
+                    });
+                },
+
+                callback: function (selectedItem) {
+                    vm.members.add(selectedItem.value);
+                    vm.dataSource.read();
+                }
+            });
+            
+        },
+         remove: function(user) {
+                var ouId = vm.organizationTree.selectedOu.id;
+                if (!ouId) {
+                    return;
+                }
+                abp.message.confirm(
+                     app.localize('RemoveUserFromOuWarningMessage', user.userName, vm.organizationTree.selectedOu.displayName),
+                     function (isConfirmed) {
+                         if (isConfirmed) {
+                             organizationUnitService.removeUserFromOrganizationUnit({
+                                 organizationUnitId: ouId,
+                                 userId: user.id
+                             }).success(function () {
+                                 abp.notify.success(app.localize('SuccessfullyRemoved'));
+                                 vm.organizationTree.incrementMemberCount(ouId, -1);
+                                 vm.dataSource.read();
+                             });
+                         }
+                     }
+                 );
+
+            }
+
+
+        }
 
 
         vm.organizationTree.init();

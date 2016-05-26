@@ -36,7 +36,10 @@ namespace Wu.MyProject.Authorization
             #endregion
 
             #region 组织机构
-             
+            var organizationUnits = administration.CreateChildPermission(PermissionNames.Pages_Administration_OrganizationUnits, L("OrganizationUnits"));
+            organizationUnits.CreateChildPermission(PermissionNames.Pages_Administration_OrganizationUnits_ManageOrganizationTree, L("ManagingOrganizationTree"));
+            organizationUnits.CreateChildPermission(PermissionNames.Pages_Administration_OrganizationUnits_ManageMembers, L("ManagingMembers"));
+
             #endregion
 
         }

@@ -12,7 +12,7 @@
         <div class="page-toolbar"></div>
     </div>
     <!--<h3 class="page-title" ng-bind="$state.current.data.pageTitle"></h3>-->
-
+    
 
     <div class="portlet box green col-lg-4">
 
@@ -41,19 +41,21 @@
     <div class="portlet box green col-lg-8">
         <div class="portlet-title">
             <div class="caption">
-                <i class="fa fa-cogs"></i><span ng-bind="title"></span>
+                <span class="caption-subject bold uppercase">
+                    @L("Members")
+                    <span ng-if="vm.organizationTree.selectedOu.displayName">: {{vm.organizationTree.selectedOu.displayName}}</span>
+                </span>
             </div>
-            <div class="tools">
-                <a href="javascript:;" class="collapse"></a>
-                <a href="javascript:;" class="fullscreen"></a>
+            <div class="actions" ng-if="vm.organizationTree.selectedOu.id">
+                <a ng-if="vm.permissions.manageMembers" ng-click="vm.members.openAddModal()" class="btn btn-circle btn-default">
+                    <i class="fa fa-plus"></i> @L("AddMember")
+                </a>
             </div>
         </div>
+
         <div class="portlet-body flip-scroll">
-            <kendo-grid options="vm.gridOptions"></kendo-grid>
-            @*<kendo-grid options="vm.members.mainGridOptions">
-            </kendo-grid>*@
-
-
+            <kendo-grid options="vm.members.gridOptions"></kendo-grid>
+          
           
         </div>
 

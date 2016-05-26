@@ -87,6 +87,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataDictionay\DataDictionay.cs" />
+    <Compile Include="DataDictionay\DataDictionayManager.cs" />
     <Compile Include="IAppFolders.cs" />
     <Compile Include="Localization\CultureHelper.cs" />
     <Compile Include="MyProjectConsts.cs" />

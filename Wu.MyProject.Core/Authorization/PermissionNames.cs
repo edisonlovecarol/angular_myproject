@@ -2,7 +2,8 @@
 {
     public static class PermissionNames
     {
-       
+        
+
         public const string Pages_Administration = "Pages.Administration";
         //用户权限
         public const string Pages_Administration_Users = "Pages.Administration.Users";
@@ -17,7 +18,10 @@
         public const string Pages_Administration_Roles_Edit = "Pages.Administration.Roles.Edit";
         public const string Pages_Administration_Roles_Delete = "Pages.Administration.Roles.Delete";
         public const string Pages_Administration_Roles_ChangePermissions = "Pages.Administration.Roles.ChangePermissions";
-        
+        //组织机构
+        public const string Pages_Administration_OrganizationUnits = "Pages.Administration.OrganizationUnits";
+        public const string Pages_Administration_OrganizationUnits_ManageOrganizationTree = "Pages.Administration.OrganizationUnits.ManageOrganizationTree";
+        public const string Pages_Administration_OrganizationUnits_ManageMembers = "Pages.Administration.OrganizationUnits.ManageMembers";
 
         public const string Pages = "Pages";
 

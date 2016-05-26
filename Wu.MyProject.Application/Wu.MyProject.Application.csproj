@@ -126,7 +126,16 @@
     <Compile Include="Authorization\Users\Exporting\UserListExcelExporter.cs" />
     <Compile Include="Authorization\Users\IUserAppService.cs" />
     <Compile Include="Authorization\Users\UserAppService.cs" />
+    <Compile Include="Common\CommonLookupAppService.cs" />
+    <Compile Include="Common\Dto\FindUsersInput.cs" />
+    <Compile Include="Common\ICommonLookupAppService.cs" />
     <Compile Include="CustomDtoMapper.cs" />
+    <Compile Include="DataDictionay\DataDictionayAppService.cs" />
+    <Compile Include="DataDictionay\Dto\CreateDataDictionryInput.cs" />
+    <Compile Include="DataDictionay\Dto\DataDictionayDto.cs" />
+    <Compile Include="DataDictionay\Dto\MoveDataDictionryInput.cs" />
+    <Compile Include="DataDictionay\Dto\UpdateDataDictionryInput.cs" />
+    <Compile Include="DataDictionay\IDataDictionayAppService.cs" />
     <Compile Include="DataExporting\Execl\EpPlus\EpPlusExcelExporterBase.cs" />
     <Compile Include="Dto\FileDto.cs" />
     <Compile Include="Dto\PagedAndFilteredInputDto.cs" />
