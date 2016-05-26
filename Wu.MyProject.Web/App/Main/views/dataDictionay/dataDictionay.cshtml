@@ -1,0 +1,42 @@
+﻿<div ng-controller="app.admin.identity.dataDictionay as vm">
+    <div class="page-bar">
+        <ul class="page-breadcrumb">
+            <li>
+                <a href="#/dashboard">主页</a>
+                <i class="fa fa-angle-right"></i>
+            </li>
+            <li>
+                <a href="#" ng-bind="$state.current.data.pageTitle"></a>
+            </li>
+        </ul>
+        <div class="page-toolbar"></div>
+    </div>
+    <!--<h3 class="page-title" ng-bind="$state.current.data.pageTitle"></h3>-->
+
+
+    <div class="portlet box green col-lg-12">
+
+        <div class="portlet-title">
+            <div class="caption">
+                <!--<span class="caption-subject bold uppercase">-->
+                <i class="fa fa-cogs"></i><span ng-bind="title"></span>
+                <!--</span>-->
+            </div>
+            <div class="actions">
+                <a ng-if="vm.permissions.manageOrganizationTree" ng-click="vm.dataDictionayTree.addUnit(null)" class="btn btn-circle btn-default">
+                    <i class="fa fa-plus"></i> @L("AddRootDataDic")
+                </a>
+            </div>
+        </div>
+        <div class="portlet-body">
+            <div id="OrganizationUnitEditTree"></div>
+            <div ng-if="!vm.dataDictionayTree.unitCount" class="text-muted">
+                @L("NoOrganizationUnitDefinedYet")
+
+            </div>
+        </div>
+
+    </div>
+
+ 
+</div>
